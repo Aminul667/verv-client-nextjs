@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/Home/Hero";
 
 export default function Home() {
   return (
-    <div className="text-4xl text-center font-bold">
-      <h1>Verv with NextJS</h1>
-      <div>
-        <Button className="bg-lime-800">Click me</Button>
-      </div>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 }
