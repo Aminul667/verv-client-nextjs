@@ -5,7 +5,7 @@ const HowItWork = () => {
   return (
     <section className="w-[345px] md:w-[1216px] mt-10 md:mt-[100px] m-auto flex justify-between items-center sm:flex-col md:flex-row">
       <div className="w-[345px] md:w-[520px]">
-        <header className="text-center">
+        <header className="text-center md:text-left">
           <h2 className="text-colorTextLime text-lg md:text-[20px] font-semibold leading-[120%] mb-4">
             HOW IT WORKS
           </h2>
