@@ -1,56 +1,90 @@
 [
   {
-    "price": 2095,
-    "location": "Palm Harbor",
-    "address": "2699 Green Valley, Highland Lake, FL",
-    "beds": 3,
-    "bathrooms": 2,
-    "area": "5x7",
-    "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9ff5ef44-163e-4768-a3ba-c200baf3c590?placeholderIfAbsent=true&apiKey=0695793bd5f84155941de1175594a2be"
+    "id": 1,
+    "title": "Palm Harbor",
+    "address": {
+      "street": "2699 Green Valley",
+      "city": "Highland Lake",
+      "state": "FL"
+    },
+    "pricePerMonth": 2095,
+    "currency": "GBP",
+    "status": "POPULAR",
+    "features": {
+      "beds": 3,
+      "bathrooms": 2,
+      "size": {
+        "width": 5,
+        "length": 7,
+        "unit": "m²"
+      }
+    },
+    "image": "imagePath"
   },
   {
-    "price": 2095,
-    "location": "Palm Harbor",
-    "address": "2699 Green Valley, Highland Lake, FL",
-    "beds": 3,
-    "bathrooms": 2,
-    "area": "5x7",
-    "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/d485c7f5-88ab-45df-891e-2edf0cb4a55a?placeholderIfAbsent=true&apiKey=0695793bd5f84155941de1175594a2be"
+    "id": 2,
+    "title": "Palm Harbor",
+    "address": {
+      "street": "2699 Green Valley",
+      "city": "Highland Lake",
+      "state": "FL"
+    },
+    "pricePerMonth": 2095,
+    "currency": "GBP",
+    "status": "POPULAR",
+    "features": {
+      "beds": 3,
+      "bathrooms": 2,
+      "size": {
+        "width": 5,
+        "length": 7,
+        "unit": "m²"
+      }
+    },
+    "image": "imagePath"
   },
   {
-    "price": 2095,
-    "location": "Palm Harbor",
-    "address": "2699 Green Valley, Highland Lake, FL",
-    "beds": 3,
-    "bathrooms": 2,
-    "area": "5x7",
-    "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecf3e194-6fd3-4e92-b63d-bb62b97582bb?placeholderIfAbsent=true&apiKey=0695793bd5f84155941de1175594a2be"
+    "id": 3,
+    "title": "Palm Harbor",
+    "address": {
+      "street": "2699 Green Valley",
+      "city": "Highland Lake",
+      "state": "FL"
+    },
+    "pricePerMonth": 2095,
+    "currency": "GBP",
+    "status": "POPULAR",
+    "features": {
+      "beds": 3,
+      "bathrooms": 2,
+      "size": {
+        "width": 5,
+        "length": 7,
+        "unit": "m²"
+      }
+    },
+    "image": "imagePath"
   },
   {
-    "price": 2095,
-    "location": "Palm Harbor",
-    "address": "2699 Green Valley, Highland Lake, FL",
-    "beds": 3,
-    "bathrooms": 2,
-    "area": "5x7",
-    "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecf3e194-6fd3-4e92-b63d-bb62b97582bb?placeholderIfAbsent=true&apiKey=0695793bd5f84155941de1175594a2be"
-  },
-  {
-    "price": 2095,
-    "location": "Palm Harbor",
-    "address": "2699 Green Valley, Highland Lake, FL",
-    "beds": 3,
-    "bathrooms": 2,
-    "area": "5x7",
-    "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecf3e194-6fd3-4e92-b63d-bb62b97582bb?placeholderIfAbsent=true&apiKey=0695793bd5f84155941de1175594a2be"
-  },
-  {
-    "price": 2095,
-    "location": "Palm Harbor",
-    "address": "2699 Green Valley, Highland Lake, FL",
-    "beds": 3,
-    "bathrooms": 2,
-    "area": "5x7",
-    "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecf3e194-6fd3-4e92-b63d-bb62b97582bb?placeholderIfAbsent=true&apiKey=0695793bd5f84155941de1175594a2be"
+    "id": 4,
+    "title": "Palm Harbor",
+    "address": {
+      "street": "2699 Green Valley",
+      "city": "Highland Lake",
+      "state": "FL"
+    },
+    "pricePerMonth": 2095,
+    "currency": "GBP",
+    "status": "POPULAR",
+    "features": {
+      "beds": 3,
+      "bathrooms": 2,
+      "size": {
+        "width": 5,
+        "length": 7,
+        "unit": "m²"
+      }
+    },
+    "image": "imagePath"
   }
 ]

@@ -1,5 +1,5 @@
+import propertyData from "./propertyData.json";
 import { Button } from "../ui/button";
-// import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -7,8 +7,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import PropertyCard from "./PropertyCard";
 
 const PropertyDemand = () => {
+  //   console.log(propertyData);
   return (
     <section className="w-[345px] md:w-[1216px] m-auto mt-10 md:mt-[100px]">
       <h3 className="text-xl font-semibold text-colorTextLime mb-4 text-center md:text-left">
@@ -35,12 +37,12 @@ const PropertyDemand = () => {
         opts={{
           align: "start",
         }}
-        className="w-full max-w-sm"
+        className="w-[1216px]"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-2">
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <span className="bg-red-600">{index}</span>
+              <PropertyCard />
             </CarouselItem>
           ))}
         </CarouselContent>
