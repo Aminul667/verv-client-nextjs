@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="py-6 bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.10)] hidden md:block">
+    <nav className="py-6 bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.10)] hidden md:block sticky top-0">
       <div className="w-[1216px] m-auto flex justify-between items-center text-[#314660]">
         <Image src={logo} width={137.951} alt="verv logo" />
         <div className="text-lg flex justify-end items-center gap-14">
