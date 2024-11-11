@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         colorTextPrimary: "#314660",
         colorTextSecondary: "#56677D",
+        colorTextLime: "#449A2B",
         colorButton: "#50B533",
         background: "var(--background)",
         foreground: "var(--foreground)",
