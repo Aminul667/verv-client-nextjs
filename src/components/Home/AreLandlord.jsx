@@ -18,7 +18,7 @@ const AreLandlord = () => {
         <div>
           <form
             action=""
-            className="flex h-[72px] py-[40px] pr-2 pl-6 justify-between items-center self-stretch rounded-[40px] border border-[#D5EDCE] bg-white mt-8"
+            className="flex h-[72px] py-2 pr-2 pl-6 justify-between items-center self-stretch rounded-[40px] border border-[#D5EDCE] bg-white mt-8"
           >
             <input
               type="text"
