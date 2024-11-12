@@ -1,6 +1,14 @@
 import Image from "next/image";
-import logo from "../../assets/images/logo.png";
-import { Button } from "../ui/button";
+import logo from "../../../assets/images/logo.png";
+
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   return (
@@ -10,8 +18,9 @@ const Navbar = () => {
         <div className="text-lg flex justify-end items-center gap-14">
           <div className="font-medium">
             <ul className="flex justify-between items-center gap-6">
-              <li className="flex justify-center items-center">
-                About
+              {/* className="flex justify-center items-center" */}
+              <li>
+                {/* About
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -26,7 +35,42 @@ const Navbar = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                </svg>
+                </svg> */}
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" className="text-lg p-0 m-0">
+                      About
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="#314660"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-36">
+                    <DropdownMenuGroup>
+                      <DropdownMenuItem>
+                        <span>About Us</span>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <span>Our Location</span>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <span>Contact</span>
+                      </DropdownMenuItem>
+                    </DropdownMenuGroup>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </li>
               <li className="flex justify-center items-center">
                 Pricing
