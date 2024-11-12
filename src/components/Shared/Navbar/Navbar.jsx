@@ -73,7 +73,7 @@ const Navbar = () => {
                 </DropdownMenu>
               </li>
               <li className="flex justify-center items-center">
-                Pricing
+                {/* Pricing
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -88,7 +88,42 @@ const Navbar = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                </svg>
+                </svg> */}
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" className="text-lg p-0 m-0">
+                      Pricing
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="#314660"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-36">
+                    <DropdownMenuGroup>
+                      <DropdownMenuItem>
+                        <span>Pricing I</span>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <span>Pricing II</span>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <span>Pricing III</span>
+                      </DropdownMenuItem>
+                    </DropdownMenuGroup>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </li>
               <li className="flex justify-center items-center">Agent Finder</li>
             </ul>
