@@ -18,6 +18,8 @@ const PropertyDemand = () => {
   const [current, setCurrent] = useState(0);
   // const [count, setCount] = useState(0);
 
+  const totalSlides = propertyData.length;
+
   useEffect(() => {
     if (!api) {
       return;
@@ -30,6 +32,8 @@ const PropertyDemand = () => {
       setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
+
+  console.log("current", current);
 
   return (
     <section className="w-[345px] md:w-[1216px] m-auto mt-10 md:mt-[100px]">
@@ -73,13 +77,15 @@ const PropertyDemand = () => {
         {/* <CarouselPrevious /> */}
         {/* <CarouselNext /> */}
       </Carousel>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-10">
+        {/* left button */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
           height="50"
           viewBox="0 0 50 50"
           fill="none"
+          className="mr-4"
           onClick={() => api?.scrollPrev()}
         >
           <circle
@@ -87,7 +93,7 @@ const PropertyDemand = () => {
             cy="25"
             r="24.5"
             transform="rotate(180 25 25)"
-            fill="white"
+            fill={current === 0 ? "white" : "#50B533"}
             stroke="#50B533"
           />
           <path
@@ -96,6 +102,7 @@ const PropertyDemand = () => {
           />
         </svg>
         {/* <Button onClick={() => api?.scrollPrev()}>Left</Button> */}
+        {/* right button */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
@@ -104,10 +111,15 @@ const PropertyDemand = () => {
           fill="none"
           onClick={() => api?.scrollNext()}
         >
-          <circle cx="25" cy="25" r="25" fill="#50B533" />
+          <circle
+            cx="25"
+            cy="25"
+            r="25"
+            fill={current === totalSlides - 3 ? "white" : "#50B533"}
+          />
           <path
             d="M15 24C14.4477 24 14 24.4477 14 25C14 25.5523 14.4477 26 15 26V24ZM35.7071 25.7071C36.0976 25.3166 36.0976 24.6834 35.7071 24.2929L29.3431 17.9289C28.9526 17.5384 28.3195 17.5384 27.9289 17.9289C27.5384 18.3195 27.5384 18.9526 27.9289 19.3431L33.5858 25L27.9289 30.6569C27.5384 31.0474 27.5384 31.6805 27.9289 32.0711C28.3195 32.4616 28.9526 32.4616 29.3431 32.0711L35.7071 25.7071ZM15 26H35V24H15V26Z"
-            fill="white"
+            fill="#50B533"
           />
         </svg>
         {/* <Button onClick={() => api?.scrollNext()}>Right</Button> */}
