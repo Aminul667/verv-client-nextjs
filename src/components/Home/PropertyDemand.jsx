@@ -33,8 +33,6 @@ const PropertyDemand = () => {
     });
   }, [api]);
 
-  console.log("current", current);
-
   return (
     <section className="w-[345px] md:w-[1216px] m-auto mt-10 md:mt-[100px]">
       <h3 className="text-xl font-semibold text-colorTextLime mb-4 text-center md:text-left">

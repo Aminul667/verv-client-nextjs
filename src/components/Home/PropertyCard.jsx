@@ -35,7 +35,7 @@ const PropertyCard = ({ property }) => {
       <div className="mt-8 px-6 pb-8">
         <div className="flex justify-between items-center">
           <p>
-            <span className="text-2xl font-semibold text-textColor leading-[150%]">
+            <span className="text-2xl font-semibold text-colorTextLime leading-[150%]">
               &#163;{property.pricePerMonth}
             </span>
             <span className="opacity-50">/month</span>
@@ -58,10 +58,10 @@ const PropertyCard = ({ property }) => {
             </svg>
           </div>
         </div>
-        <h2 className="mt-5 text-2xl font-semibold text-textColorPrimary leading-[150%]">
+        <h2 className="mt-5 text-2xl font-semibold text-colorTextPrimary leading-[150%]">
           {property.title}
         </h2>
-        <p className="text-base font-normal text-textColorSecondary leading-[150%] mt-1">
+        <p className="text-base font-normal text-colorTextSecondary leading-[150%] mt-1">
           {property.address.street}, {property.address.city},{" "}
           {property.address.state}
         </p>
@@ -81,7 +81,7 @@ const PropertyCard = ({ property }) => {
                 fill="#50B533"
               />
             </svg>
-            <span className="text-sm font-normal text-textColorSecondary leading-[120%]">
+            <span className="text-sm font-normal text-colorTextSecondary leading-[120%]">
               {property.features.beds} Beds
             </span>
           </div>
@@ -98,7 +98,7 @@ const PropertyCard = ({ property }) => {
                 fill="#50B533"
               />
             </svg>
-            <span className="text-sm font-normal text-textColorSecondary leading-[120%]">
+            <span className="text-sm font-normal text-colorTextSecondary leading-[120%]">
               {property.features.bathrooms} Bathrooms
             </span>
           </div>
@@ -144,7 +144,7 @@ const PropertyCard = ({ property }) => {
                 </clipPath>
               </defs>
             </svg>
-            <span className="text-sm font-normal text-textColorSecondary leading-[120%]">
+            <span className="text-sm font-normal text-colorTextSecondary leading-[120%]">
               {property.features.size.width} x {property.features.size.length} m
               <sup>2</sup>
             </span>

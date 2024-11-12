@@ -1,3 +1,4 @@
+import AreLandlord from "@/components/Home/AreLandlord";
 import Hero from "@/components/Home/Hero";
 import HowItWork from "@/components/Home/HowItWork";
 import PropertyDemand from "@/components/Home/PropertyDemand";
@@ -10,6 +11,7 @@ export default function Home() {
       <TrustPilot />
       <HowItWork />
       <PropertyDemand />
+      <AreLandlord />
     </>
   );
 }
