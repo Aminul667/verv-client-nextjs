@@ -1,4 +1,5 @@
 import Login from "@/components/Login/Login";
+import SocialButton from "@/components/Login/SocialButton";
 
 const LoginPage = () => {
   return (
@@ -6,6 +7,13 @@ const LoginPage = () => {
       <h2 className="text-[#00204A] text-center font-inter text-[24px] font-semibold leading-[120%]">
         Login to your Account
       </h2>
+      <SocialButton />
+      <div className="relative">
+        <p className="absolute text-colorTextSecondary -bottom-[20px] left-[149px] p-2 z-10 bg-white">
+          OR
+        </p>
+        <div className="w-[336px] h-[1px] bg-[#EEF1F3]"></div>
+      </div>
       <Login />
     </div>
   );

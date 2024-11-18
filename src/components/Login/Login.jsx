@@ -39,7 +39,27 @@ const Login = () => {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Email" {...field} />
+                <Input
+                  placeholder="Email"
+                  {...field}
+                  className="py-2 px-[12px]"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="password"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  placeholder="Password"
+                  {...field}
+                  className="py-2 px-[12px]"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
