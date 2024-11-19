@@ -21,6 +21,7 @@ const Login = () => {
     resolver: zodResolver(createLoginSchema),
     defaultValues: {
       email: "",
+      password: "",
     },
   });
 
