@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { createLoginSchema } from "@/zod-schemas/login";
+import InputField from "@/utils/InputField";
 
 const Login = () => {
   const form = useForm({
@@ -34,21 +35,11 @@ const Login = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">
-        <FormField
+        <InputField
           control={form.control}
           name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input
-                  placeholder="Email"
-                  {...field}
-                  className="py-2 px-[12px]"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+          placeholder="Email"
+          className="w-[336px] h-[38px] px-3 py-[6px] border border-gray-400 bg-white rounded mb-4"
         />
         <FormField
           control={form.control}
