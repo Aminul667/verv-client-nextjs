@@ -15,7 +15,12 @@ const InputField = ({ control, name, placeholder, className }) => {
       render={({ field }) => (
         <FormItem>
           <FormControl>
-            <Input placeholder={placeholder} {...field} className={className} />
+            <Input
+              placeholder={placeholder}
+              {...field}
+              className={className}
+              type="text"
+            />
           </FormControl>
           <FormMessage />
         </FormItem>

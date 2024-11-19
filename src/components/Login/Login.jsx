@@ -16,6 +16,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { createLoginSchema } from "@/zod-schemas/login";
 import InputField from "@/utils/InputField";
+import { useState } from "react";
+import PasswordInputField from "@/utils/PasswordInputField";
 
 const Login = () => {
   const form = useForm({
@@ -39,25 +41,16 @@ const Login = () => {
           control={form.control}
           name="email"
           placeholder="Email"
-          className="w-[336px] h-[38px] px-3 py-[6px] border border-gray-400 bg-white rounded mb-4"
+          className="w-[336px] h-[38px] px-3 py-[6px] border border-[#CED4DA] bg-white rounded mb-4"
         />
-        <FormField
+        {/* password */}
+        <PasswordInputField
           control={form.control}
           name="password"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input
-                  placeholder="Password"
-                  {...field}
-                  className="py-2 px-[12px]"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+          placeholder="Password"
+          className="w-[336px] h-[38px] px-3 py-[6px] border border-[#CED4DA] bg-white rounded mb-4"
         />
-        <Button type="submit">Submit</Button>
+        {/* <Button type="submit">Submit</Button> */}
       </form>
     </Form>
   );
