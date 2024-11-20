@@ -19,15 +19,14 @@ const PasswordInputField = ({ control, name, placeholder, className }) => {
       render={({ field }) => (
         <FormItem>
           <FormControl>
-            <div className="flex">
+            <div className="flex justify-between items-center gap-1 border border-[#CED4DA] rounded">
               <Input
-                id="input-23"
-                className={className}
+                className={`${className}`}
                 placeholder={placeholder}
                 type={isVisible ? "text" : "password"}
               />
               <button
-                className="-mr-10"
+                className=""
                 type="button"
                 onClick={toggleVisibility}
                 aria-label={isVisible ? "Hide password" : "Show password"}

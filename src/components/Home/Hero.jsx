@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <header
       style={backgroundImageStyle}
-      className="w-[393px] h-[600px] md:w-[1216px] md:h-[528px] m-auto md:rounded-[40px] my-9 flex justify-center items-center"
+      className="w-[393px] h-[600px] md:w-[1216px] md:h-[528px] m-auto md:rounded-[40px] mt-9 flex justify-center items-center"
     >
       <div>
         <h1 className="text-colorTextPrimary text-center font-inter text-[48px] font-bold leading-[120%] sm:w-[345px] md:w-auto">

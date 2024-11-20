@@ -43,14 +43,19 @@ const Login = () => {
           placeholder="Email"
           className="w-[336px] h-[38px] px-3 py-[6px] border border-[#CED4DA] bg-white rounded mb-4"
         />
-        {/* password */}
+        {/* password*/}
         <PasswordInputField
           control={form.control}
           name="password"
           placeholder="Password"
-          className="w-[336px] h-[38px] px-3 py-[6px] border border-[#CED4DA] bg-white rounded mb-4"
+          className="w-[336px] h-[38px] px-3 pl-[6px]"
         />
-        {/* <Button type="submit">Submit</Button> */}
+        <Button
+          type="submit"
+          className="bg-colorButton w-full mt-6 rounded shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)] text-lg font-semibold"
+        >
+          Submit
+        </Button>
       </form>
     </Form>
   );

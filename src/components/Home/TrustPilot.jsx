@@ -20,7 +20,7 @@ const TrustPilot = () => {
           <div className="flex justify-center items-center">
             <div className="flex gap-[12.863px]">
               <div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center mr-[12px]">
                   <Image src={ellipse1} alt="" />
                   {imageList.map((image, index) => (
                     <Image alt="" key={index} src={image} className="-ml-5" />

@@ -15,6 +15,12 @@ const LoginPage = () => {
         <div className="w-[336px] h-[1px] bg-[#EEF1F3]"></div>
       </div>
       <Login />
+      <p className="text-center text-[#3B5374]">
+        Don’t have account?{" "}
+        <span className="font-semibold underline decoration-solid text-colorButton">
+          Register
+        </span>
+      </p>
     </div>
   );
 };
