@@ -135,7 +135,7 @@ const Navbar = () => {
             <ul>
               <li>
                 <Link
-                  href="/register"
+                  href="/login"
                   className="flex justify-center items-center gap-2"
                 >
                   <svg
