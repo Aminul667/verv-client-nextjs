@@ -1,5 +1,6 @@
 import Login from "@/components/Login/Login";
 import SocialButton from "@/components/Login/SocialButton";
+import Link from "next/link";
 
 const LoginPage = () => {
   return (
@@ -18,7 +19,7 @@ const LoginPage = () => {
       <p className="text-center text-[#3B5374]">
         Don’t have account?{" "}
         <span className="font-semibold underline decoration-solid text-colorButton">
-          Register
+          <Link href="/register">Register</Link>
         </span>
       </p>
     </div>
