@@ -23,8 +23,19 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-      <InputField register={register} errors={errors} />
-      <PasswordInputField register={register} errors={errors} />
+      <InputField
+        type="email"
+        placeholder="Email"
+        registerAs="email"
+        register={register}
+        errors={errors}
+        className="flex w-full items-start self-stretch px-3 py-1.5 rounded-md border border-gray-400 bg-white pr-10 mb-4"
+      />
+      <PasswordInputField
+        register={register}
+        errors={errors}
+        className="flex w-full items-start self-stretch px-3 py-1.5 rounded-md border border-gray-400 bg-white pr-10"
+      />
       <Button
         type="submit"
         className="bg-colorButton w-full mt-6 rounded shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)] text-lg font-semibold"

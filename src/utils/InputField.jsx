@@ -1,19 +1,25 @@
 import { Input } from "@/components/ui/input";
 import React from "react";
 
-// { control, name, placeholder, className }
-const InputField = ({ register, errors }) => {
+const InputField = ({
+  type,
+  placeholder,
+  registerAs,
+  register,
+  errors,
+  className,
+}) => {
   return (
     <div>
       <Input
-        id="email"
-        type="email"
-        placeholder="Enter your email"
-        {...register("email")}
-        className={errors.email ? "border-red-500" : ""}
+        className={className}
+        id={registerAs}
+        type={type}
+        placeholder={placeholder}
+        {...register(registerAs)}
       />
       {errors.email && (
-        <p className="text-red-500 text-sm">{errors.email.message}</p>
+        <p className="text-red-500 text-sm ">{errors[registerAs].message}</p>
       )}
     </div>
   );

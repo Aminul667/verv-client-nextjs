@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 
-const PasswordInputField = ({ register, errors }) => {
+const PasswordInputField = ({ register, errors, className }) => {
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => setIsVisible((prevState) => !prevState);
 
@@ -10,8 +10,8 @@ const PasswordInputField = ({ register, errors }) => {
     <div className="space-y-2">
       <div className="relative">
         <Input
+          className={className}
           id="password"
-          className="flex w-full items-start self-stretch px-3 py-1.5 rounded-md border border-gray-400 bg-white pr-10"
           {...register("password")}
           placeholder="Password"
           type={isVisible ? "text" : "password"}
