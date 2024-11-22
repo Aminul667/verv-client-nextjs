@@ -249,7 +249,7 @@ const AllListings = () => {
           {/* card */}
           <div className="flex flex-wrap items-start gap-[32px] self-stretch">
             {/* single card */}
-            {Array.from({ length: 1 }).map((_, index) => (
+            {Array.from({ length: 12 }).map((_, index) => (
               <div key={index}>
                 <SingleListing />
               </div>
