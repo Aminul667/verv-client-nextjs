@@ -1,4 +1,4 @@
-import SingleListing from "./SingleListing";
+import SingleListingCard from "./SingleListingCard";
 
 const AllListings = () => {
   return (
@@ -251,7 +251,7 @@ const AllListings = () => {
             {/* single card */}
             {Array.from({ length: 12 }).map((_, index) => (
               <div key={index}>
-                <SingleListing />
+                <SingleListingCard />
               </div>
             ))}
           </div>

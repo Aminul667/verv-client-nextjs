@@ -1,8 +1,9 @@
 import Image from "next/image";
 import propertyImage from "../../assets/images/property-image.jpg";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
-const SingleListing = () => {
+const SingleListingCard = () => {
   return (
     <div className="flex w-[384px] h-[549px] flex-col justify-center items-center gap-[32px] rounded-[24px] bg-white shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)]">
       <Image
@@ -157,7 +158,10 @@ const SingleListing = () => {
         </p>
       </div>
 
-      <Button className="flex w-[384px] h-[56px] p-[8px] px-[16px]  justify-center items-center gap-[8px] flex-shrink-0 rounded-b-[24px] bg-[#50B533]">
+      <Link
+        href="/listing-id"
+        className="flex w-[384px] h-[56px] p-[8px] px-[16px]  justify-center items-center gap-[8px] flex-shrink-0 rounded-b-[24px] bg-[#50B533]"
+      >
         <span className="text-[#FFF] font-inter text-[18px] font-semibold leading-normal">
           View Details
         </span>
@@ -182,9 +186,9 @@ const SingleListing = () => {
             strokeLinecap="round"
           />
         </svg>
-      </Button>
+      </Link>
     </div>
   );
 };
 
-export default SingleListing;
+export default SingleListingCard;
