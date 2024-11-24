@@ -51,7 +51,7 @@ const SingleProductChild2 = () => {
                 to us for further details.
               </p>
               <p className="w-[800px] text-[#56677D] text-[18px] font-normal leading-[150%] font-inter">
-                Call us now or enquire online to book your viewing while it's
+                Call us now or enquire online to book your viewing while its
                 still available!
               </p>
               <p className="w-[800px] text-[#56677D] text-[18px] font-normal leading-[150%] font-inter">
