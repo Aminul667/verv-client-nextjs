@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import PropertyCard from "./PropertyCard";
+import Link from "next/link";
 
 const PropertyDemand = () => {
   const [api, setApi] = useState();
@@ -50,9 +51,11 @@ const PropertyDemand = () => {
           </p>
         </div>
         <div>
-          <Button className="bg-colorButton text-lg font-semibold w-[298px] h-[56px] p-[8px_16px] rounded-[32px] hidden md:block">
-            Browse More Properties
-          </Button>
+          <Link href="/all-listings">
+            <Button className="bg-colorButton text-lg font-semibold w-[298px] h-[56px] p-[8px_16px] rounded-[32px] hidden md:block">
+              Browse More Properties
+            </Button>
+          </Link>
         </div>
       </div>
       <Carousel
