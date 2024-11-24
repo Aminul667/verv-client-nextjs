@@ -158,34 +158,33 @@ const SingleListingCard = () => {
         </p>
       </div>
 
-      <Link
-        href="/listing-id"
-        className="flex w-[384px] h-[56px] p-[8px] px-[16px]  justify-center items-center gap-[8px] flex-shrink-0 rounded-b-[24px] bg-[#50B533]"
-      >
-        <span className="text-[#FFF] font-inter text-[18px] font-semibold leading-normal">
-          View Details
-        </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="21"
-          height="20"
-          viewBox="0 0 21 20"
-          fill="none"
-        >
-          <path
-            d="M10.5003 6.66663L13.8337 9.99993M13.8337 9.99993L10.5003 13.3333M13.8337 9.99993H2.16699"
-            stroke="white"
-            strokeWidth="1.25"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M8 15.2045C9.14133 16.1194 10.5901 16.6667 12.1667 16.6667C15.8486 16.6667 18.8333 13.6819 18.8333 10C18.8333 6.31814 15.8486 3.33337 12.1667 3.33337C10.5901 3.33337 9.14133 3.88064 8 4.79556"
-            stroke="white"
-            strokeWidth="1.25"
-            strokeLinecap="round"
-          />
-        </svg>
+      <Link href="/listing-id">
+        <Button className="flex w-[384px] h-[56px] p-[8px] px-[16px]  justify-center items-center gap-[8px] flex-shrink-0 rounded-b-[24px] bg-[#50B533]">
+          <span className="text-[#FFF] font-inter text-[18px] font-semibold leading-normal">
+            View Details
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="20"
+            viewBox="0 0 21 20"
+            fill="none"
+          >
+            <path
+              d="M10.5003 6.66663L13.8337 9.99993M13.8337 9.99993L10.5003 13.3333M13.8337 9.99993H2.16699"
+              stroke="white"
+              strokeWidth="1.25"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M8 15.2045C9.14133 16.1194 10.5901 16.6667 12.1667 16.6667C15.8486 16.6667 18.8333 13.6819 18.8333 10C18.8333 6.31814 15.8486 3.33337 12.1667 3.33337C10.5901 3.33337 9.14133 3.88064 8 4.79556"
+              stroke="white"
+              strokeWidth="1.25"
+              strokeLinecap="round"
+            />
+          </svg>
+        </Button>
       </Link>
     </div>
   );
