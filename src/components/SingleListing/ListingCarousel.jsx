@@ -29,12 +29,12 @@ const ListingCarousel = () => {
                   </SliderMainItem>
                 ))}
               </CarouselMainContainer>
-              <CarouselThumbsContainer>
+              <CarouselThumbsContainer className="justify-between">
                 {Array.from({ length: 5 }).map((_, index) => (
                   <SliderThumbItem
                     key={index}
                     index={index}
-                    className="bg-transparent w-[148px] h-[120px]"
+                    className="bg-transparent w-[148px] h-[120px] p-0 flex"
                   >
                     <div className="outline outline-1 outline-border size-full flex items-center justify-center rounded-xl bg-background">
                       Slide {index + 1}
