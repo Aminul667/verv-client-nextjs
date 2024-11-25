@@ -388,6 +388,19 @@ const ListingCarousel = () => {
                   Rent Now
                 </Button>
               </div>
+
+              {/* separate line */}
+              <div className="w-[336px] h-[1.5px] opacity-10 bg-colorTextPrimary"></div>
+
+              {/* arrange a viewing */}
+              <div className="flex flex-col items-center gap-4 w-[336px] h-[94px]">
+                <p className="text-lg text-[#7D8A9B] font-semibold">
+                  Want to arrange a viewing?
+                </p>
+                <Button className="w-full h-14 bg-colorTextPrimary px-4 py-2 rounded-[32px]">
+                  Contact Landlord
+                </Button>
+              </div>
             </div>
           </div>
         </div>
