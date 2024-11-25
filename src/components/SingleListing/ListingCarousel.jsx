@@ -207,6 +207,98 @@ const ListingCarousel = () => {
             <h1 className="text-colorTextPrimary text-[32px] font-semibold leading-[120%]">
               6 Bed, 3 Bathhouse
             </h1>
+            <p className="w-40 h-8 p-2 text-sm font-semibold text-center leading-[120%] text-[#314660] rounded-[32px] bg-[#B4DFA7] mt-4 mb-8">
+              6 rooms available
+            </p>
+            {/* property information */}
+            <div className="flex flex-col items-start gap-4 w-[348px] h-[187px]">
+              {/* location */}
+              <div className="flex items-start gap-2 w-full h-[58px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="20"
+                  viewBox="0 0 18 20"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M9 20C12.375 20 18 13.7981 18 8.88889C18 3.97969 13.9706 0 9 0C4.02944 0 0 3.97969 0 8.88889C0 13.7981 5.625 20 9 20ZM9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12Z"
+                    fill="#50B533"
+                  />
+                </svg>
+                <p className="text-lg text-colorTextSecondary leading-[150%]">
+                  Grange Road, Selly Oak, Birmingham, B296AP{" "}
+                  <span className="font-semibold text-colorButton">
+                    Show on map
+                  </span>
+                </p>
+              </div>
+              {/* available from */}
+              <div className="flex items-center gap-2 w-full h-[27px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="22"
+                  viewBox="0 0 18 22"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M5.75 1.5C5.75 1.08579 5.41421 0.75 5 0.75C4.58579 0.75 4.25 1.08579 4.25 1.5V3H4C1.79086 3 0 4.79086 0 7V7.75H18V7C18 4.79086 16.2091 3 14 3H13.75V1.5C13.75 1.08579 13.4142 0.75 13 0.75C12.5858 0.75 12.25 1.08579 12.25 1.5V3H5.75V1.5ZM0 9.25H18V17.5C18 19.7091 16.2091 21.5 14 21.5H4C1.79086 21.5 0 19.7091 0 17.5V9.25ZM9 15.5C9.55229 15.5 10 15.0523 10 14.5C10 13.9477 9.55229 13.5 9 13.5C8.44771 13.5 8 13.9477 8 14.5C8 15.0523 8.44771 15.5 9 15.5ZM14 14.5C14 15.0523 13.5523 15.5 13 15.5C12.4477 15.5 12 15.0523 12 14.5C12 13.9477 12.4477 13.5 13 13.5C13.5523 13.5 14 13.9477 14 14.5ZM5 15.5C5.55228 15.5 6 15.0523 6 14.5C6 13.9477 5.55228 13.5 5 13.5C4.44772 13.5 4 13.9477 4 14.5C4 15.0523 4.44772 15.5 5 15.5Z"
+                    fill="#50B533"
+                  />
+                </svg>
+                <p className="text-lg text-colorTextSecondary leading-[150%]">
+                  Available from:{" "}
+                  <span className="font-semibold">1st January 2025</span>
+                </p>
+              </div>
+              {/* agent */}
+              <div className="flex items-center gap-2 w-full h-[27px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M16.1804 22.5H7.81965C5.5109 22.5 3.6393 20.714 3.6393 18.5108V13.633C3.6393 12.9248 3.34447 12.2456 2.81969 11.7448C1.60381 10.5845 1.76187 8.66205 3.15251 7.69692L9.54124 3.263C11.0071 2.24567 12.9929 2.24567 14.4588 3.263L20.8475 7.69691C22.2381 8.66205 22.3962 10.5845 21.1803 11.7448C20.6555 12.2456 20.3607 12.9248 20.3607 13.633V18.5108C20.3607 20.714 18.4891 22.5 16.1804 22.5ZM10 17.75C9.58579 17.75 9.25 18.0858 9.25 18.5C9.25 18.9142 9.58579 19.25 10 19.25H14C14.4142 19.25 14.75 18.9142 14.75 18.5C14.75 18.0858 14.4142 17.75 14 17.75H10Z"
+                    fill="#50B533"
+                  />
+                </svg>
+                <p className="text-lg text-colorTextSecondary leading-[150%]">
+                  Letting agent{" "}
+                  <span className="font-semibold">1st January 2025</span>
+                </p>
+              </div>
+              {/* reference */}
+              <div className="flex items-center gap-2 w-full h-[27px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="22"
+                  viewBox="0 0 18 22"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M5.75 1.5C5.75 1.08579 5.41421 0.75 5 0.75C4.58579 0.75 4.25 1.08579 4.25 1.5V3H4C1.79086 3 0 4.79086 0 7V7.75H18V7C18 4.79086 16.2091 3 14 3H13.75V1.5C13.75 1.08579 13.4142 0.75 13 0.75C12.5858 0.75 12.25 1.08579 12.25 1.5V3H5.75V1.5ZM0 9.25H18V17.5C18 19.7091 16.2091 21.5 14 21.5H4C1.79086 21.5 0 19.7091 0 17.5V9.25ZM9 15.5C9.55229 15.5 10 15.0523 10 14.5C10 13.9477 9.55229 13.5 9 13.5C8.44771 13.5 8 13.9477 8 14.5C8 15.0523 8.44771 15.5 9 15.5ZM14 14.5C14 15.0523 13.5523 15.5 13 15.5C12.4477 15.5 12 15.0523 12 14.5C12 13.9477 12.4477 13.5 13 13.5C13.5523 13.5 14 13.9477 14 14.5ZM5 15.5C5.55228 15.5 6 15.0523 6 14.5C6 13.9477 5.55228 13.5 5 13.5C4.44772 13.5 4 13.9477 4 14.5C4 15.0523 4.44772 15.5 5 15.5Z"
+                    fill="#50B533"
+                  />
+                </svg>
+                <p className="text-lg text-colorTextSecondary leading-[150%]">
+                  Property Reference:{" "}
+                  <span className="font-semibold">2191292</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
