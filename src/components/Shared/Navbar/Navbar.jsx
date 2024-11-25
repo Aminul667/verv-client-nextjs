@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="py-6 bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.10)] hidden md:block sticky top-0 z-10">
+    <nav className="py-6 bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.10)] hidden md:block sticky top-0 z-20">
       <div className="w-[1216px] m-auto flex justify-between items-center text-[#314660]">
         <Link href="/">
           <Image src={logo} width={137.951} alt="verv logo" />

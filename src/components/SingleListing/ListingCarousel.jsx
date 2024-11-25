@@ -8,7 +8,23 @@ import {
   SliderThumbItem,
 } from "../ui/carousel2";
 
+import propertyCarousel1 from "../../assets/images/property-carousel-img-1.png";
+import propertyCarousel2 from "../../assets/images/property-carousel-img-2.png";
+import propertyCarousel3 from "../../assets/images/property-carousel-img-3.png";
+import propertyCarousel4 from "../../assets/images/property-carousel-img-4.png";
+import propertyCarousel5 from "../../assets/images/property-carousel-img-5.png";
+import propertyCarousel6 from "../../assets/images/property-carousel-img-6.png";
+import Image from "next/image";
+
 const ListingCarousel = () => {
+  const listOfCarouselImage = [
+    propertyCarousel1,
+    propertyCarousel2,
+    propertyCarousel3,
+    propertyCarousel4,
+    propertyCarousel5,
+  ];
+
   return (
     <section className="h-[982px] bg-[#EEF1F3] flex items-center justify-center">
       <div className="w-[1216px] h-[865px] m-auto bg-green-300">
@@ -21,24 +37,32 @@ const ListingCarousel = () => {
               <CarouselNext className="top-1/3 -translate-y-1/3" />
               <CarouselPrevious className="top-1/3 -translate-y-1/3" />
               <CarouselMainContainer className="h-[522px]">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <SliderMainItem key={index} className="bg-transparent">
-                    <div className="outline outline-1 outline-border size-full flex items-center justify-center rounded-xl bg-background">
-                      Slide {index + 1}
-                    </div>
+                {listOfCarouselImage.map((carouselImage, index) => (
+                  <SliderMainItem key={index} className="bg-transparent p-0">
+                    <Image
+                      src={carouselImage}
+                      alt="property"
+                      width={800}
+                      height={522}
+                      className="rounded-2xl bg-white"
+                    />
                   </SliderMainItem>
                 ))}
               </CarouselMainContainer>
               <CarouselThumbsContainer className="justify-between">
-                {Array.from({ length: 5 }).map((_, index) => (
+                {listOfCarouselImage.map((thumbImage, index) => (
                   <SliderThumbItem
                     key={index}
                     index={index}
                     className="bg-transparent w-[148px] h-[120px] p-0 flex"
                   >
-                    <div className="outline outline-1 outline-border size-full flex items-center justify-center rounded-xl bg-background">
-                      Slide {index + 1}
-                    </div>{" "}
+                    <Image
+                      src={thumbImage}
+                      alt="thumb image"
+                      width={148}
+                      height={120}
+                      className="rounded-2xl bg-white"
+                    />{" "}
                   </SliderThumbItem>
                 ))}
               </CarouselThumbsContainer>
