@@ -62,15 +62,15 @@ const Navbar = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-36">
                     <DropdownMenuGroup>
-                      <Link href="/about">
-                        <DropdownMenuItem>About Us</DropdownMenuItem>
+                      <Link href="/about/verv">
+                        <DropdownMenuItem>Verv</DropdownMenuItem>
                       </Link>
-                      <DropdownMenuItem>
-                        <span>Our Location</span>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem>
-                        <span>Contact</span>
-                      </DropdownMenuItem>
+                      <Link href="/about/landlords">
+                        <DropdownMenuItem>Landlords</DropdownMenuItem>
+                      </Link>
+                      <Link href="/about/tenants">
+                        <DropdownMenuItem>Tenants</DropdownMenuItem>
+                      </Link>
                     </DropdownMenuGroup>
                   </DropdownMenuContent>
                 </DropdownMenu>
