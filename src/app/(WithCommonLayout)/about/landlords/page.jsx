@@ -1,7 +1,9 @@
+import Landlords from "@/components/About/Landlords/Landlords";
+
 const page = () => {
   return (
     <div>
-      <h2>This is landlords page</h2>
+      <Landlords />
     </div>
   );
 };
