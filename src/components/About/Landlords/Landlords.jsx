@@ -37,8 +37,15 @@ const Landlords = () => {
         </div>
       </section>
       {/* trust pilot */}
-      <section>
+      <div>
         <TrustPilot />
+      </div>
+      {/* perfect package */}
+      <section className="w-[1216px] flex flex-col items-center gap-12 m-auto">
+        <h2 className="text-3xl text-colorTextPrimary font-semibold leading-[38px]">
+          Choose the perfect package for you
+        </h2>
+        <div className="flex items-center gap-8 self-stretch h-[452px] bg-red-500"></div>
       </section>
     </section>
   );
