@@ -6,7 +6,7 @@ import IncludeExclude from "./IncludeExclude";
 
 const SingleProductChild2 = () => {
   return (
-    <div className="flex flex-row flex-nowrap gap-6">
+    <div>
       {/* summary div */}
       <div className="inline-flex flex-col items-start gap-[40px] ml-[352px] pb-[40px]">
         {/* summary */}
@@ -177,60 +177,58 @@ const SingleProductChild2 = () => {
         </div>
       </div>
       {/* landlord profile */}
-      <div className="flex justify-start items-start">
-        <div className="inline-flex flex-col justify-center items-center p-[40px_76px] rounded-[24px] border border-[#EEF1F3] bg-white">
+      <div className="inline-flex flex-col justify-center items-center p-[40px_76px] rounded-[24px] border border-[#EEF1F3] bg-white">
+        <div className="flex flex-col items-center gap-[24px]">
+          <p className="text-[#56677D] font-inter text-[20px] font-semibold leading-[120%]">
+            Landlord Profile
+          </p>
           <div className="flex flex-col items-center gap-[24px]">
-            <p className="text-[#56677D] font-inter text-[20px] font-semibold leading-[120%]">
-              Landlord Profile
-            </p>
-            <div className="flex flex-col items-center gap-[24px]">
-              {/* verv logo */}
-              <div className="w-[120px] h-[120px] flex justify-center items-center rounded-full border border-[#50B533]">
-                <Image src={logo} alt="logo" height={32} width={80} />
-              </div>
-              {/* rooms */}
-              <div className="flex flex-col items-center gap-[8px]">
-                <p className="text-[#314660] font-inter text-[24px] font-semibold leading-[120%]">
-                  Verv Rooms Limited
+            {/* verv logo */}
+            <div className="w-[120px] h-[120px] flex justify-center items-center rounded-full border border-[#50B533]">
+              <Image src={logo} alt="logo" height={32} width={80} />
+            </div>
+            {/* rooms */}
+            <div className="flex flex-col items-center gap-[8px]">
+              <p className="text-[#314660] font-inter text-[24px] font-semibold leading-[120%]">
+                Verv Rooms Limited
+              </p>
+              <div className="flex items-center gap-[4px]">
+                <div className="w-[20.79px] h-[20.79px] fill-[#50B533]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.33547 0.94335C9.60849 0.393861 10.3923 0.393862 10.6654 0.943351L12.8951 5.43101C13.0032 5.64861 13.2109 5.79954 13.4513 5.83512L18.4083 6.56894C19.0153 6.65879 19.2575 7.40428 18.8193 7.83373L15.2403 11.3411C15.0667 11.5111 14.9874 11.7554 15.0278 11.9949L15.8617 16.9361C15.9638 17.5411 15.3297 18.0019 14.7858 17.7178L10.3442 15.3978C10.1288 15.2853 9.87203 15.2853 9.65666 15.3978L5.21501 17.7178C4.67115 18.0019 4.037 17.5411 4.13911 16.9361L4.97301 11.9949C5.01345 11.7554 4.9341 11.5111 4.76056 11.3411L1.18156 7.83373C0.743334 7.40428 0.985559 6.65879 1.59252 6.56894L6.54955 5.83512C6.78991 5.79954 6.99765 5.64861 7.10577 5.43101L9.33547 0.94335Z"
+                      fill="#50B533"
+                    />
+                  </svg>
+                </div>
+                <p className="text-[#314660] font-inter text-[18px] font-medium leading-normal">
+                  5 Star Rated by Tenants
                 </p>
-                <div className="flex items-center gap-[4px]">
-                  <div className="w-[20.79px] h-[20.79px] fill-[#50B533]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="18"
-                      viewBox="0 0 20 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M9.33547 0.94335C9.60849 0.393861 10.3923 0.393862 10.6654 0.943351L12.8951 5.43101C13.0032 5.64861 13.2109 5.79954 13.4513 5.83512L18.4083 6.56894C19.0153 6.65879 19.2575 7.40428 18.8193 7.83373L15.2403 11.3411C15.0667 11.5111 14.9874 11.7554 15.0278 11.9949L15.8617 16.9361C15.9638 17.5411 15.3297 18.0019 14.7858 17.7178L10.3442 15.3978C10.1288 15.2853 9.87203 15.2853 9.65666 15.3978L5.21501 17.7178C4.67115 18.0019 4.037 17.5411 4.13911 16.9361L4.97301 11.9949C5.01345 11.7554 4.9341 11.5111 4.76056 11.3411L1.18156 7.83373C0.743334 7.40428 0.985559 6.65879 1.59252 6.56894L6.54955 5.83512C6.78991 5.79954 6.99765 5.64861 7.10577 5.43101L9.33547 0.94335Z"
-                        fill="#50B533"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-[#314660] font-inter text-[18px] font-medium leading-normal">
-                    5 Star Rated by Tenants
-                  </p>
-                </div>
               </div>
-              {/* reply rating */}
-              <div className="flex flex-col items-center gap-[3px]">
-                <div className="flex items-center gap-[4px]">
-                  <p className="text-[#56677D] font-inter text-[18px] font-normal leading-[150%]">
-                    Reply Rating:
-                  </p>
-                  <p className="text-[#56677D] font-inter text-[18px] font-semibold leading-normal">
-                    98%
-                  </p>
-                </div>
-                <div className="flex items-center gap-[4px]">
-                  <p className="text-[#56677D] font-inter text-[18px] font-normal leading-[150%]">
-                    Reply time:
-                  </p>
-                  <p className="text-[#56677D] font-inter text-[18px] font-semibold leading-normal">
-                    2 Days
-                  </p>
-                </div>
+            </div>
+            {/* reply rating */}
+            <div className="flex flex-col items-center gap-[3px]">
+              <div className="flex items-center gap-[4px]">
+                <p className="text-[#56677D] font-inter text-[18px] font-normal leading-[150%]">
+                  Reply Rating:
+                </p>
+                <p className="text-[#56677D] font-inter text-[18px] font-semibold leading-normal">
+                  98%
+                </p>
+              </div>
+              <div className="flex items-center gap-[4px]">
+                <p className="text-[#56677D] font-inter text-[18px] font-normal leading-[150%]">
+                  Reply time:
+                </p>
+                <p className="text-[#56677D] font-inter text-[18px] font-semibold leading-normal">
+                  2 Days
+                </p>
               </div>
             </div>
           </div>

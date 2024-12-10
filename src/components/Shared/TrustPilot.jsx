@@ -8,7 +8,7 @@ import ellipse6 from "../../assets/images/ellipse-6.png";
 import rightEllipse from "../../assets/images/right-ellipse.jpg";
 import oliveTree from "../../assets/images/olive-tree.png";
 
-const TrustPilot = () => {
+const TrustPilot = ({ showGrow }) => {
   const imageList = [ellipse2, ellipse3, ellipse4, ellipse5, ellipse6];
   const countElement = [1, 2, 3, 4, 5];
 
@@ -201,15 +201,17 @@ const TrustPilot = () => {
       </section>
 
       {/* grow with verv */}
-      <section className="flex justify-between items-center gap-1 sm:flex-col md:flex-row w-[345px] md:w-[1216px] m-auto sm:px-4 md:px-[87px] py-[24px] rounded-[56px] bg-[#F6FFF4]">
-        <Image src={oliveTree} alt="oliveTree" height={32} width={32} />
-        <div className="flex justify-center items-center">
-          <p className="text-colorTextPrimary text-center text-[20px] font-semibold leading-[24px]">
-            Grow with Verv – for each tenancy, we plant an olive tree, rooted in
-            the name of Landlords and Tenants.
-          </p>
-        </div>
-      </section>
+      {showGrow && (
+        <section className="flex justify-between items-center gap-1 sm:flex-col md:flex-row w-[345px] md:w-[1216px] m-auto sm:px-4 md:px-[87px] py-[24px] rounded-[56px] bg-[#F6FFF4]">
+          <Image src={oliveTree} alt="oliveTree" height={32} width={32} />
+          <div className="flex justify-center items-center">
+            <p className="text-colorTextPrimary text-center text-[20px] font-semibold leading-[24px]">
+              Grow with Verv – for each tenancy, we plant an olive tree, rooted
+              in the name of Landlords and Tenants.
+            </p>
+          </div>
+        </section>
+      )}
     </div>
   );
 };
