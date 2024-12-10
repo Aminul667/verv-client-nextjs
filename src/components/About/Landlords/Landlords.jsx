@@ -42,8 +42,8 @@ const Landlords = () => {
         <TrustPilot />
       </div>
       {/* perfect package */}
-      <section className="w-[1216px] flex flex-col items-center gap-12 m-auto">
-        <h2 className="text-3xl text-colorTextPrimary font-semibold leading-[38px] mt-3">
+      <section className="w-[1216px] flex flex-col items-center gap-12 m-auto mt-16">
+        <h2 className="text-3xl text-colorTextPrimary font-semibold leading-[38px]">
           Choose the perfect package for you
         </h2>
         <div className="flex items-center gap-8 self-stretch h-[452px]">
@@ -127,6 +127,27 @@ const Landlords = () => {
             </Button>
           </div>
         </div>
+      </section>
+
+      {/* new opportunity */}
+
+      <section className="flex flex-col justify-start w-[1216px] items-start gap-[24px] m-auto mt-[100px]">
+        <div className="flex flex-col items-start gap-7 self-stretch">
+          <p className="text-[#314660] font-semibold text-[30px] leading-[38px]">
+            Discover New Opportunities for Landlords!
+          </p>
+          <p className="text-[#233244] font-normal text-[16px] leading-[24px] w-[833px]">
+            Verve does a lot more than property ads and listings. We offer a
+            full tenancy creation service called Rent Now, and everything else
+            you need to rent your house, including: gas & electricity safety
+            certification, inventories, photography, insurance and much more!
+          </p>
+        </div>
+        <Button className="flex w-[262px] h-[52px] p-1.5 justify-center items-center gap-2 rounded-[32px] bg-colorButton">
+          <span className="text-white font-medium text-[16px] leading-[24px]">
+            See All OpenRent Products{" "}
+          </span>
+        </Button>
       </section>
     </section>
   );
