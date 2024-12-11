@@ -5,6 +5,8 @@ import Image from "next/image";
 import TrustPilot from "@/components/Shared/TrustPilot";
 import Link from "next/link";
 
+import landlordWhyAdvertise from "../../../assets/images/landlord-why-advertise.png";
+
 const Landlords = () => {
   return (
     <section>
@@ -148,6 +150,37 @@ const Landlords = () => {
             See All OpenRent Products{" "}
           </span>
         </Button>
+      </section>
+
+      {/* Why Advertise with Verve? */}
+      <section className="mt-[100px] py-20 bg-[#EEF1F3] shadow-[0_4px_200px_0_rgba(232,249,247,0.2)]">
+        <div className="w-[1009px] h-[270px] flex items-center flex-shrink-0 gap-20 m-auto">
+          {/* why advertise image */}
+          <div className="w-[295px] h-full">
+            <Image
+              src={landlordWhyAdvertise}
+              alt="why advertise with us image"
+              width={295}
+              height={270}
+            />
+          </div>
+          <div className="flex flex-col items-start flex-shrink-0 w-[634.741px] h-full gap-[31.837px]">
+            <h1 className="text-colorTextPrimary text-[47px] font-bold leading-[60px]">
+              Why Advertise with Verve?
+            </h1>
+            <p className="font-semibold leading-[24px] text-colorTextSecondary">
+              Verve is the cheapest and best way to advertise your rental
+              property on the UK&apos;s major property websites. You&apos;ll
+              save over <span className="text-colorButton">&#163;1,853</span>{" "}
+              per property and find a tenant in 6 days on average. You&apos;ll
+              get unbeatable coverage on Right-move, Zoopla and dozens more
+              sites for just <span className="text-colorButton">&#163;49</span>.
+            </p>
+            <Button className="flex w-[168.137px] h-[51.734px] px-[15.918px] py-[5.969px] justify-center items-center gap-[7.959px] rounded-[31.837px] bg-colorButton font-medium leading-[24px]">
+              Advertise Now
+            </Button>
+          </div>
+        </div>
       </section>
     </section>
   );
