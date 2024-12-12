@@ -17,12 +17,13 @@ const PasswordInputField = ({ register, errors, className }) => {
           type={isVisible ? "text" : "password"}
         />
         <button
-          className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
+          className="absolute top-1/2 -translate-y-1/2 cursor-pointer"
           type="button"
           onClick={toggleVisibility}
           aria-label={isVisible ? "Hide password" : "Show password"}
           aria-pressed={isVisible}
           aria-controls="password"
+          style={{ right: "12px" }}
         >
           {isVisible ? (
             <EyeOff size={16} strokeWidth={2} aria-hidden="true" />

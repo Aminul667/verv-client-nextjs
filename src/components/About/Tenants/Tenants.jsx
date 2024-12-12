@@ -72,7 +72,7 @@ const Tenants = () => {
       {/* Why use verv */}
       <section className="m-auto  w-[733px] h-[373px] rounded-[28px] mt-[100px] p-[60px] bg-[rgba(238,248,235,0.7)]">
         <div className="w-[613px] flex items-center gap-[101.702px]">
-          <div className="w-[272.201px] flex flex-col items-start gap-[31.906px] flex-shrink-0">
+          <div className="w-[272.201px] flex flex-col items-start gap-[31.906px] flex-shrink-0 ">
             <p className="self-stretch text-[#233244] text-[30px] font-semibold leading-[38px]">
               Why use Verve?
             </p>

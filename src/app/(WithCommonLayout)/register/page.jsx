@@ -1,9 +1,20 @@
-import Register from "@/components/Register/Register";
+import RegisterUser from "@/components/Register/RegisterUser";
+import Link from "next/link";
 
 const RegisterPage = () => {
   return (
-    <div className="flex justify-center items-center ">
-      <Register />
+    <div className="m-auto flex flex-col items-center justify-center w-[416px] h-[411px] p-10 mt-14 gap-10 shrink-0 rounded-2xl border border-[#EEF1F3] bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.08)]">
+      <h2 className="text-[#00204A] text-center font-inter text-[24px] font-semibold leading-[120%]">
+        Create a new account
+      </h2>
+
+      <RegisterUser />
+      <p className="text-center text-[#3B5374]">
+        Got an account?{" "}
+        <span className="font-semibold underline decoration-solid text-colorButton">
+          <Link href="/login">Login</Link>
+        </span>
+      </p>
     </div>
   );
 };
