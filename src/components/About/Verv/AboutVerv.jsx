@@ -10,6 +10,14 @@ import {
 const AboutVerv = () => {
   return (
     <div>
+      <section>
+        <h2 className="text-center text-4xl my-24">
+          Dhruba&apos;s code is ready to integrate but there are some changes in
+          the design
+        </h2>
+      </section>
+
+      {/* frequent questions */}
       <section className="w-[1009px] m-auto">
         <h2 className="text-colorTextPrimary text-4xl font-bold leading-[44px] text-center mb-[60px]">
           Frequently Asked Questions
