@@ -1,3 +1,4 @@
+import Reviews from "@/components/Shared/Reviews";
 import {
   Accordion,
   AccordionContent,
@@ -48,18 +49,90 @@ const AboutVerv = () => {
                 How does it work?
               </AccordionTrigger>
               <AccordionContent>
-                Yes. It comes with default styles that matches the other
-                components&apos; aesthetic.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ad
+                rerum numquam ducimus? Impedit odio deleniti autem. Alias unde
+                fuga vitae tempore dicta blanditiis quae vel distinctio nesciunt
+                reprehenderit. Maxime.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is it animated?</AccordionTrigger>
+              <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
+                What charges are there for Landlords?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It&apos;s animated by default, but you can disable it if
-                you prefer.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque perspiciatis, quos sunt fugit recusandae, fugiat,
+                suscipit sed debitis praesentium ratione minima eveniet eos
+                incidunt facere dicta tempore aspernatur quasi aliquid?
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
+                What charges are there for Tenants?
+              </AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laborum voluptas quas repellat voluptatum ratione et maiores
+                sequi facere, incidunt necessitatibus veritatis impedit odio
+                corporis provident dolorem, animi enim dolor magnam.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
+                What is Rent Now?
+              </AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Temporibus excepturi sed, minus repellendus fugiat vel eum
+                inventore corrupti reprehenderit quis aliquid eaque ullam error
+                consequuntur saepe voluptatibus eos veniam illo?
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
+                How do I start Rent Now?
+              </AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus eveniet quisquam voluptas quos aliquid facere et
+                odio ut debitis! Odit eaque aperiam error eligendi distinctio,
+                nobis voluptatum minima neque ipsam.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
+                Why do tenants have to place a holding deposit?
+              </AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                enim animi minus quos natus ea dolor vitae voluptates, veritatis
+                necessitatibus nemo, sequi tempora a. Quidem quasi quo in
+                temporibus libero!
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
+                Who keeps the holding deposit?
+              </AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatibus, consequuntur eveniet, distinctio quia quo minima
+                rem, sunt quibusdam reprehenderit facilis placeat modi corrupti
+                nemo fugit nihil laborum cum perspiciatis nulla?
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+        </div>
+      </section>
+
+      {/* our happy clients */}
+      <section className="mt-[100px]">
+        <div className="w-[1216px] h-[425px] m-auto flex flex-col items-start gap-7">
+          <h1 className="text-colorTextPrimary text-[30px] font-semibold leading-[38px] w-full text-center">
+            Our happy clients
+          </h1>
+          {/* clients review carousel */}
+          <Reviews />
         </div>
       </section>
     </div>
