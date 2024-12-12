@@ -6,7 +6,7 @@ import TrustPilot from "@/components/Shared/TrustPilot";
 import Link from "next/link";
 
 import landlordWhyAdvertise from "../../../assets/images/landlord-why-advertise.png";
-import LandlordReviews from "./LandlordReviews";
+import Reviews from "@/components/Shared/Reviews";
 
 const Landlords = () => {
   return (
@@ -186,12 +186,12 @@ const Landlords = () => {
 
       {/* what landlords saying */}
       <section className="mt-[100px]">
-        <div className="w-[1216px] h-[425px] m-auto bg-slate-500 flex flex-col items-start gap-7">
-          <h1 className="text-colorTextPrimary text-[30px] font-semibold leading-[38px]">
+        <div className="w-[1216px] h-[425px] m-auto flex flex-col items-start gap-7">
+          <h1 className="text-colorTextPrimary text-[30px] font-semibold leading-[38px] w-full text-center">
             What our landlords are saying:
           </h1>
           {/* landlord review carousel */}
-          <LandlordReviews />
+          <Reviews />
         </div>
       </section>
     </section>
