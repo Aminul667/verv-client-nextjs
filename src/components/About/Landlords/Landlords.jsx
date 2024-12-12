@@ -10,7 +10,7 @@ import Reviews from "@/components/Shared/Reviews";
 
 const Landlords = () => {
   return (
-    <section>
+    <div>
       {/* rental property */}
       <section className="bg-[rgba(238,248,235,0.78)]">
         <div className="w-[1216px] h-[540px] flex py-[80px] justify-center items-start gap-8 flex-shrink-0 m-auto">
@@ -194,7 +194,7 @@ const Landlords = () => {
           <Reviews />
         </div>
       </section>
-    </section>
+    </div>
   );
 };
 
