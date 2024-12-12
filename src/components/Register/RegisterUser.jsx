@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { createRegisterSchema } from "@/zod-schemas/register";
+import RadioGroupField from "@/utils/RadioGroupField";
 
 const RegisterUser = () => {
   const {
@@ -19,6 +20,14 @@ const RegisterUser = () => {
   const onSubmit = (data) => {
     console.log("Form Data: ", data);
   };
+
+  const registerOptions = [
+    { value: 1, label: "Landlord" },
+    {
+      value: 2,
+      label: "Tenant",
+    },
+  ];
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full">
@@ -34,6 +43,12 @@ const RegisterUser = () => {
         register={register}
         errors={errors}
         className="flex w-full items-start self-stretch px-3 py-1.5 rounded-md border border-gray-400 bg-white pr-10"
+      />
+      <RadioGroupField
+        options={registerOptions}
+        registerAs="role"
+        register={register}
+        errors={errors}
       />
       <Button
         type="submit"

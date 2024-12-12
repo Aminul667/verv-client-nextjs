@@ -5,7 +5,7 @@ const RadioGroupField = ({ options, registerAs, register, errors }) => {
         <label key={option.value} className="flex items-center space-x-2">
           <input
             type="radio"
-            value={option.value}
+            value={option.label}
             {...register(registerAs)}
             className="h-4 w-4"
           />
@@ -13,7 +13,7 @@ const RadioGroupField = ({ options, registerAs, register, errors }) => {
         </label>
       ))}
       {errors[registerAs] && (
-        <p className="text-red-500 text-sm">{errors[registerAs].message}</p>
+        <p className="text-red-500 text-sm">{errors[registerAs]?.message}</p>
       )}
     </div>
   );
