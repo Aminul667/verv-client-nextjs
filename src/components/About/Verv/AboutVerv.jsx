@@ -1,3 +1,4 @@
+import AreLandlord from "@/components/Home/AreLandlord";
 import Reviews from "@/components/Shared/Reviews";
 import {
   Accordion,
@@ -135,6 +136,7 @@ const AboutVerv = () => {
           <Reviews />
         </div>
       </section>
+      <AreLandlord />
     </div>
   );
 };
