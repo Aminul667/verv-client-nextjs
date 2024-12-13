@@ -167,80 +167,99 @@ const Tenants = () => {
       </section>
 
       {/* How verve works */}
-      {/* <div className="flex justify-center pt-[78px]">
-        <div className="flex items-center  w-[1168px] flex-col gap-[60px]">
-          <p className="text-[#233244] text-center text-[30px] font-semibold leading-[38px]">
-            How Verve Works For Tenants
-          </p>
-          <div className="flex">
+      <section className="w-[1168px] m-auto mt-[78px]">
+        <p className="text-colorTextPrimary text-center text-[30px] font-semibold leading-[38px]">
+          How Verve Works For Tenants
+        </p>
+        <div className="flex justify-start items-center gap-[60px] bg-blue-500">
+          {/* 1 */}
+          <div className="flex items-end">
             <PropertyDetailsCard
               header_text="Save Time by Filtering out Unsuitable Properties"
               middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
               lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
             />
-            <div className="w-[290.5px] h-[169.5px] flex-shrink-0 stroke-[2px] stroke-[#CED3D9]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-              >
-                <circle cx="16" cy="16" r="16" fill="#50B533" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="292"
-                height="171"
-                viewBox="0 0 292 171"
-                fill="none"
-              >
-                <path
-                  d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
-                  stroke="#CED3D9"
-                  strokeWidth="2"
-                  strokeDasharray="8 5"
-                />
-              </svg>
+
+            <div className="relative">
+              {/* circle */}
+              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -top-4">
+                <span className="text-white font-semibold leading-[20px]">
+                  1
+                </span>
+              </div>
+
+              {/* path */}
+              <div className="w-[291px] h-[170px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="292"
+                  height="171"
+                  viewBox="0 0 292 171"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
+                    stroke="#CED3D9"
+                    strokeWidth="2"
+                    strokeDasharray="8 5"
+                  />
+                </svg>
+              </div>
+
+              {/* circle */}
+              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
+                <span className="text-white font-semibold leading-[20px]">
+                  2
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 2 */}
+        <div className="flex justify-end items-center gap-[60px] bg-red-500">
+          <div className="flex items-end">
+            <div className="relative">
+              {/* circle */}
+              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -top-4">
+                <span className="text-white font-semibold leading-[20px]">
+                  1
+                </span>
+              </div>
+
+              {/* path */}
+              <div className="w-[291px] h-[170px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="292"
+                  height="171"
+                  viewBox="0 0 292 171"
+                  fill="none"
+                >
+                  <path
+                    d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
+                    stroke="#CED3D9"
+                    strokeWidth="2"
+                    strokeDasharray="8 5"
+                  />
+                </svg>
+              </div>
+
+              {/* circle */}
+              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
+                <span className="text-white font-semibold leading-[20px]">
+                  2
+                </span>
+              </div>
             </div>
             <PropertyDetailsCard
-              header_text="Just Click to Book a Viewing or Speak to Landlord"
-              middle_text="Find a property you love? Just press 'Book Viewing'. You'll send a message directly to the landlord. You can speak to them directly, ask questions about the property and find a good time to view."
-              lower_text="Verve will protect your identity and mask your details while you arrange the viewing. Get all the info you need straight from the landlord - not a middleman."
-            />
-
-            <PropertyDetailsCard
-              header_text="View the Property with the Landlord"
-              middle_text="View the property and take a look around. The landlord will be there to answer all your questions, without a letting agent getting in the way or piling on the pressure."
-              lower_text="This is your chance to find out about your new home from the person who knows it best. Don't worry if you forget anything! You'll be able to message the landlord directly after the viewing, too."
-            />
-
-            <PropertyDetailsCard
-              header_text="Click Rent Now to Reserve the Property"
-              middle_text="If the viewing has gone well, press Rent Now to reserve the property. You'll pay a refundable holding deposit of one week's rent to us - not the landlord. If the tenancy goes ahead, the holding deposit will go towards your first month's rent."
-              lower_text="We protect your money with clear terms and conditions, so you can feel safe during the move-in process. You can pay online by card at any time. No more dodgy cash deposits or waiting for offices to open!"
-            />
-
-            <PropertyDetailsCard
-              header_text="Referencing, Contracts & Deposits: All Processed Online"
-              middle_text="If the landlord wants to reference you, we'll make it super easy and keep you in the loop at every step with our online progress dashboard. There is no cost to tenants for referencing."
-              lower_text="You'll then be able to pay your tenancy deposit online. We'll register it straight away and issue you the contract, which you can also sign online, so no more arranging a time to sign with all your flatmates!"
-            />
-
-            <PropertyDetailsCard
-              header_text="Free Concierge and Bills Setup"
-              middle_text="As part of moving with OpenRent, you get complimentary access to our personal home concierge service."
-              lower_text="Our concierge partners handle all the hassle of setting up council tax, energy and broadband, along with other services to make sure your move-in is as smooth as possible! You can simply book an appointment with the team once you have a move-in date agreed."
-            />
-
-            <PropertyDetailsCard
-              header_text="Get the keys and move in!"
-              middle_text="We'll automatically put your holding deposit towards your first month's rent. Once you've paid the move-in moneys, and signed the tenancy agreement, you'll have a safe, secure tenancy with your landlord. You can access any of your documents (contract, deposit paperwork, references) via your OpenRent dashboard."
-              lower_text="Our concierge partners handle all the hassle of settingup council tax, energy and broadband, along with other services to make sure your move-in is as smooth as possible! You can simply book an appointment with the team once you have a move-in date agreed."
+              header_text="Save Time by Filtering out Unsuitable Properties"
+              middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+              lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
             />
           </div>
         </div>
-      </div> */}
+      </section>
 
       {/* grow with verv */}
       {/* <div className="my-[78px]">
