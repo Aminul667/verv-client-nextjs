@@ -42,7 +42,7 @@ const Landlords = () => {
       </section>
       {/* trust pilot */}
       <div>
-        <TrustPilot />
+        <TrustPilot showTrustPilot={true} />
       </div>
       {/* perfect package */}
       <section className="w-[1216px] flex flex-col items-center gap-12 m-auto mt-16">

@@ -3,6 +3,7 @@ import tenantWhyVerb from "../../../assets/images/tenant-why-verb.png";
 
 import PropertyDetailsCard from "./PropertyDetailsCard";
 import Image from "next/image";
+import TrustPilot from "@/components/Shared/TrustPilot";
 
 const Tenants = () => {
   return (
@@ -405,21 +406,24 @@ const Tenants = () => {
               />
             </div>
           </div>
+
+          {/* seventh section */}
+          <div className="flex justify-start items-center gap-[60px]">
+            <div className="flex items-end">
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* grow with verv */}
-      {/* <div className="my-[78px]">
-        <section className="flex justify-between items-center gap-1 sm:flex-col md:flex-row w-[345px] md:w-[1216px] m-auto sm:px-4 md:px-[87px] py-[24px] rounded-[56px] bg-[#F6FFF4]">
-          <Image src={oliveTree} alt="oliveTree" height={32} width={32} />
-          <div className="flex justify-center items-center">
-            <p className="text-colorTextPrimary text-center text-[20px] font-semibold leading-[24px]">
-              Grow with Verv - for each tenancy, we plant an olive tree, rooted
-              in the name of Landlords and Tenants.
-            </p>
-          </div>
-        </section>
-      </div> */}
+      <div className="mt-[78px]">
+        <TrustPilot showGrow={true} />
+      </div>
     </div>
   );
 };

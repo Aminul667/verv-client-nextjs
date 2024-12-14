@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <TrustPilot showGrow={true} />
+      <TrustPilot showGrow={true} showTrustPilot={true} />
       <HowItWork />
       <PropertyDemand />
       <AreLandlord />

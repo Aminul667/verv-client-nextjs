@@ -2,6 +2,8 @@ import Image from "next/image";
 import logo from "../../../assets/images/logo.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer>
       <div className="w-[1216px] m-auto flex items-start py-20">
@@ -93,7 +95,7 @@ const Footer = () => {
           <p className="text-colorTextSecondary text-lg leading-[27px] mb-2">
             Company
           </p>
-          <p className="text-colorTextSecondary text-lg leading-[27px] mb-2">
+          <p className="text-colorTextSecondary text-lg leading-[27px] mb-2 w-[111px]">
             How it works
           </p>
           <p className="text-colorTextSecondary text-lg leading-[27px] mb-2">
@@ -158,7 +160,7 @@ const Footer = () => {
       <div className="w-full h-[1.5px] bg-[#E8E6F9]"></div>
       <div className="w-[1216px] m-auto flex justify-between items-center py-10">
         <p className="text-colorTextSecondary leading-[24px]">
-          Copyright © 2024 Verv. All rights reserved
+          Copyright &copy; {currentYear} Verv. All rights reserved
         </p>
         <div className="flex items-start gap-10">
           <svg
