@@ -168,95 +168,242 @@ const Tenants = () => {
 
       {/* How verve works */}
       <section className="w-[1168px] m-auto mt-[78px]">
-        <p className="text-colorTextPrimary text-center text-[30px] font-semibold leading-[38px]">
+        <p className="text-colorTextPrimary text-center text-[30px] font-semibold leading-[38px] mb-[60px]">
           How Verve Works For Tenants
         </p>
-        <div className="flex justify-start items-center gap-[60px] bg-blue-500">
-          {/* 1 */}
-          <div className="flex items-end">
-            <PropertyDetailsCard
-              header_text="Save Time by Filtering out Unsuitable Properties"
-              middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
-              lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
-            />
 
-            <div className="relative">
-              {/* circle */}
-              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -top-4">
-                <span className="text-white font-semibold leading-[20px]">
-                  1
-                </span>
-              </div>
+        {/* design path */}
+        <div>
+          {/* first section */}
+          <div className="flex justify-start items-center gap-[60px]">
+            <div className="flex items-end">
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
 
-              {/* path */}
-              <div className="w-[291px] h-[170px]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="292"
-                  height="171"
-                  viewBox="0 0 292 171"
-                  fill="none"
-                >
-                  <path
-                    d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
-                    stroke="#CED3D9"
-                    strokeWidth="2"
-                    strokeDasharray="8 5"
-                  />
-                </svg>
-              </div>
+              <div className="relative">
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -top-4">
+                  <span className="text-white font-semibold leading-[20px]">
+                    1
+                  </span>
+                </div>
 
-              {/* circle */}
-              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
-                <span className="text-white font-semibold leading-[20px]">
-                  2
-                </span>
+                {/* path */}
+                <div className="w-[291px] h-[170px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="292"
+                    height="171"
+                    viewBox="0 0 292 171"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
+                      stroke="#CED3D9"
+                      strokeWidth="2"
+                      strokeDasharray="8 5"
+                    />
+                  </svg>
+                </div>
+
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
+                  <span className="text-white font-semibold leading-[20px]">
+                    2
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* 2 */}
-        <div className="flex justify-end items-center gap-[60px] bg-red-500">
-          <div className="flex items-end">
-            <div className="relative">
-              {/* circle */}
-              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -top-4">
-                <span className="text-white font-semibold leading-[20px]">
-                  1
-                </span>
+          {/* second section */}
+          <div className="flex justify-end items-center gap-[60px]">
+            <div className="flex items-end">
+              <div className="relative">
+                {/* path */}
+                <div className="w-[296px] h-[169px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="297"
+                    height="170"
+                    viewBox="0 0 297 170"
+                    fill="none"
+                  >
+                    <path
+                      d="M297 1H17C8.16345 1 1 8.16345 1 17L1.00003 170"
+                      stroke="#CED3D9"
+                      strokeWidth="2"
+                      strokeDasharray="8 5"
+                    />
+                  </svg>
+                </div>
+
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -left-4 bottom-0">
+                  <span className="text-white font-semibold leading-[20px]">
+                    3
+                  </span>
+                </div>
               </div>
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
+            </div>
+          </div>
 
-              {/* path */}
-              <div className="w-[291px] h-[170px]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="292"
-                  height="171"
-                  viewBox="0 0 292 171"
-                  fill="none"
-                >
-                  <path
-                    d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
-                    stroke="#CED3D9"
-                    strokeWidth="2"
-                    strokeDasharray="8 5"
-                  />
-                </svg>
-              </div>
+          {/* third section */}
+          <div className="flex justify-start items-center gap-[60px]">
+            <div className="flex items-end">
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
 
-              {/* circle */}
-              <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
-                <span className="text-white font-semibold leading-[20px]">
-                  2
-                </span>
+              <div className="relative">
+                {/* path */}
+                <div className="w-[291px] h-[170px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="292"
+                    height="171"
+                    viewBox="0 0 292 171"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
+                      stroke="#CED3D9"
+                      strokeWidth="2"
+                      strokeDasharray="8 5"
+                    />
+                  </svg>
+                </div>
+
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
+                  <span className="text-white font-semibold leading-[20px]">
+                    4
+                  </span>
+                </div>
               </div>
             </div>
-            <PropertyDetailsCard
-              header_text="Save Time by Filtering out Unsuitable Properties"
-              middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
-              lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
-            />
+          </div>
+
+          {/* fourth section */}
+          <div className="flex justify-end items-center gap-[60px]">
+            <div className="flex items-end">
+              <div className="relative">
+                {/* path */}
+                <div className="w-[296px] h-[169px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="297"
+                    height="170"
+                    viewBox="0 0 297 170"
+                    fill="none"
+                  >
+                    <path
+                      d="M297 1H17C8.16345 1 1 8.16345 1 17L1.00003 170"
+                      stroke="#CED3D9"
+                      strokeWidth="2"
+                      strokeDasharray="8 5"
+                    />
+                  </svg>
+                </div>
+
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -left-4 bottom-0">
+                  <span className="text-white font-semibold leading-[20px]">
+                    5
+                  </span>
+                </div>
+              </div>
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
+            </div>
+          </div>
+
+          {/* fifth section */}
+          <div className="flex justify-start items-center gap-[60px]">
+            <div className="flex items-end">
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
+
+              <div className="relative">
+                {/* path */}
+                <div className="w-[291px] h-[170px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="292"
+                    height="171"
+                    viewBox="0 0 292 171"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.5 1H275C283.837 1 291 8.16344 291 17V170.5"
+                      stroke="#CED3D9"
+                      strokeWidth="2"
+                      strokeDasharray="8 5"
+                    />
+                  </svg>
+                </div>
+
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -right-4 bottom-0">
+                  <span className="text-white font-semibold leading-[20px]">
+                    6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* sixth section */}
+          <div className="flex justify-end items-center gap-[60px]">
+            <div className="flex items-end">
+              <div className="relative">
+                {/* path */}
+                <div className="w-[296px] h-[169px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="297"
+                    height="170"
+                    viewBox="0 0 297 170"
+                    fill="none"
+                  >
+                    <path
+                      d="M297 1H17C8.16345 1 1 8.16345 1 17L1.00003 170"
+                      stroke="#CED3D9"
+                      strokeWidth="2"
+                      strokeDasharray="8 5"
+                    />
+                  </svg>
+                </div>
+
+                {/* circle */}
+                <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full bg-colorButton absolute -left-4 bottom-0">
+                  <span className="text-white font-semibold leading-[20px]">
+                    7
+                  </span>
+                </div>
+              </div>
+              <PropertyDetailsCard
+                header_text="Save Time by Filtering out Unsuitable Properties"
+                middle_text="You'll only see properties that are available now, with no fees, appropriate pictures, and all the details up front. We have thousands of properties all over the UK."
+                lower_text="As soon as a property isn't available, we take it offline. If you've already enquired about a property that gets taken, we'll email you right away. If you only want to see properties suitable for pets, DSS, students or families, then just tick a box and that's all you'll see."
+              />
+            </div>
           </div>
         </div>
       </section>
