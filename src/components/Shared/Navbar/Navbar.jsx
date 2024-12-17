@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Navbar = () => {
   return (
@@ -132,7 +133,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex justify-end items-center gap-6 font-medium">
-            <ul>
+            <ul className="flex items-center justify-center gap-2">
               <li>
                 <Link
                   href="/login"
@@ -163,6 +164,26 @@ const Navbar = () => {
                   </svg>
                   Sign In/Register
                 </Link>
+              </li>
+              <li>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Avatar className="cursor-pointer">
+                      <AvatarImage
+                        src="https://github.com/shadcn.png"
+                        alt="@shadcn"
+                      />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-36">
+                    <DropdownMenuGroup>
+                      <DropdownMenuItem>Profile</DropdownMenuItem>
+                      <DropdownMenuItem>Setting</DropdownMenuItem>
+                      <DropdownMenuItem>Logout</DropdownMenuItem>
+                    </DropdownMenuGroup>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </li>
             </ul>
             <Button className="text-lg font-semibold rounded-[32px] bg-[#50B533] w-[180px] h-[56px] py-2 px-4">
