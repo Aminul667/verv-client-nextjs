@@ -19,10 +19,15 @@ const RegisterUser = () => {
     resolver: zodResolver(createRegisterSchema),
   });
 
-  const { mutate: handleUserRegistration, isPending } = useUserRegistration();
+  // 1. call the hook for different functionality
+  const {
+    mutate: handleUserRegistration,
+    isPending,
+    isSuccess,
+  } = useUserRegistration();
 
-  const onSubmit = (data) => {
-    const userData = { user: data };
+  const onSubmit = (userData) => {
+    // const userData = { user: data };
     console.log("Form Data: ", userData);
 
     handleUserRegistration(userData);
