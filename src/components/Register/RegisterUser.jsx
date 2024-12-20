@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { createRegisterSchema } from "@/zod-schemas/register";
 import RadioGroupField from "@/utils/RadioGroupField";
 import { registerUser } from "@/services/AuthService";
+import { useUserRegistration } from "@/hooks/auth.hooks";
 
 const RegisterUser = () => {
   const {
@@ -18,11 +19,13 @@ const RegisterUser = () => {
     resolver: zodResolver(createRegisterSchema),
   });
 
+  const { mutate: handleUserRegistration, isPending } = useUserRegistration();
+
   const onSubmit = (data) => {
     const userData = { user: data };
     console.log("Form Data: ", userData);
 
-    registerUser(userData);
+    handleUserRegistration(userData);
   };
 
   const registerOptions = [
