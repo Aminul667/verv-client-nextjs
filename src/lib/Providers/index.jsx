@@ -1,5 +1,6 @@
 "use client";
 
+import UserProvider from "@/context/user.provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { Toaster } from "sonner";
@@ -13,10 +14,10 @@ export function Providers({ children }) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* <UserProvider> */}
-      <Toaster position="top-center" />
-      {children}
-      {/* </UserProvider> */}
+      <UserProvider>
+        <Toaster position="top-center" />
+        {children}
+      </UserProvider>
     </QueryClientProvider>
   );
 }
