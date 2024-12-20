@@ -4,12 +4,12 @@ const RadioGroupField = ({ options, registerAs, register, errors }) => {
       <div className="flex items-center gap-4">
         {options.map((option) => (
           <label
-            key={option.value}
+            key={option.label}
             className="flex items-center justify-center gap-2"
           >
             <input
               type="radio"
-              value={option.label}
+              value={option.value}
               {...register(registerAs)}
               className="h-4 w-4 "
             />

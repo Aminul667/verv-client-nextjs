@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { createRegisterSchema } from "@/zod-schemas/register";
 import RadioGroupField from "@/utils/RadioGroupField";
+import { registerUser } from "@/services/AuthService";
 
 const RegisterUser = () => {
   const {
@@ -18,13 +19,16 @@ const RegisterUser = () => {
   });
 
   const onSubmit = (data) => {
-    console.log("Form Data: ", data);
+    const userData = { user: data };
+    console.log("Form Data: ", userData);
+
+    registerUser(userData);
   };
 
   const registerOptions = [
-    { value: 1, label: "Landlord" },
+    { value: "landlord", label: "Landlord" },
     {
-      value: 2,
+      value: "tenant",
       label: "Tenant",
     },
   ];
