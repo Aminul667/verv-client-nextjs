@@ -9,6 +9,9 @@ import { createRegisterSchema } from "@/zod-schemas/register";
 import RadioGroupField from "@/utils/RadioGroupField";
 import { useUserRegistration } from "@/hooks/auth.hooks";
 import Loading from "@/utils/Loading";
+import { useUser } from "@/context/user.provider";
+import { useEffect } from "react";
+import { registerOptions } from "@/constants";
 
 const RegisterUser = () => {
   const {
@@ -26,20 +29,35 @@ const RegisterUser = () => {
     isSuccess,
   } = useUserRegistration();
 
+  // for loading stage
+  const { setIsLoading: userLoading } = useUser();
+
   const onSubmit = (userData) => {
-    // const userData = { user: data };
     console.log("Form Data: ", userData);
 
     handleUserRegistration(userData);
+
+    // for loading state
+    userLoading(true);
   };
 
-  const registerOptions = [
-    { value: "landlord", label: "Landlord" },
-    {
-      value: "tenant",
-      label: "Tenant",
-    },
-  ];
+  // useEffect(() => {
+  //   if (!isPending && isSuccess) {
+  //     if (redirect) {
+  //       router.push(redirect);
+  //     } else {
+  //       router.push("/");
+  //     }
+  //   }
+  // }, [isPending, isSuccess]);
+
+  // const registerOptions = [
+  //   { value: "landlord", label: "Landlord" },
+  //   {
+  //     value: "tenant",
+  //     label: "Tenant",
+  //   },
+  // ];
 
   return (
     <>
