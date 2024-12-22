@@ -18,7 +18,7 @@ const InputField = ({
         placeholder={placeholder}
         {...register(registerAs)}
       />
-      {errors.email && (
+      {errors[registerAs] && (
         <p className="text-red-500 text-sm ">{errors[registerAs].message}</p>
       )}
     </div>
