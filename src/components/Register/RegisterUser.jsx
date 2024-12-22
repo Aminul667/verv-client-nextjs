@@ -51,14 +51,6 @@ const RegisterUser = () => {
   //   }
   // }, [isPending, isSuccess]);
 
-  // const registerOptions = [
-  //   { value: "landlord", label: "Landlord" },
-  //   {
-  //     value: "tenant",
-  //     label: "Tenant",
-  //   },
-  // ];
-
   return (
     <>
       {isPending && <Loading />}
