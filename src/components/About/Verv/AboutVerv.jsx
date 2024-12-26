@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 const AboutVerv = () => {
   return (
     <div>
-      <section className="py-20 bg-[#EEF1F3]">
+      {/* hero section */}
+      <section className="py-20 bg-[#EEF1F3] mb-[100px]">
         <div className="w-[1216px] m-auto flex justify-between items-center gap-8">
           <div
             className="w-[600px] h-[395px] rounded-[40px] bg-gray-300 bg-cover bg-center bg-no-repeat"
@@ -25,6 +26,134 @@ const AboutVerv = () => {
             <Button className="font-semibold text-sm flex w-[147px] h-[40px] px-[16px] py-[8px] justify-center items-center gap-[8px] rounded-[32px] bg-colorButton">
               Learn More
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* tailored for property */}
+      <section className="w-[1216px] h-[811px] m-auto flex justify-between items-start gap-[33px] bg-lime-400">
+        <div className="w-[489px] flex flex-col items-start gap-[50px] self-stretch bg-red-400">
+          <div className="flex flex-col items-start gap-6 self-stretch">
+            <h2 className="text-colorTextPrimary text-4xl font-bold leading-[44px]">
+              Tailored for Property Owners and Renters
+            </h2>
+            <p className="text-colorTextSecondary leading-[24px]">
+              Welcome to Verv, where we transform the rental experience for both
+              landlords and tenants. Say goodbye to hidden fees, outdated
+              listings, and the expensive 10% commissions landlords once paid.
+              The future of renting is here—more transparent, efficient, and
+              cost-effective than ever!
+            </p>
+          </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4">
+            {/* first box */}
+            <div className="inline-flex items-center p-[20px_47px_20px_20px] rounded-[12px] bg-[var(--secondary-1,#EEF1F3)]">
+              <div className="flex flex-col items-start gap-[4px]">
+                <div className="flex items-center gap-[6px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="18"
+                    viewBox="0 0 16 18"
+                    fill="none"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M11.3333 0.041687C11.6785 0.041687 11.9583 0.321509 11.9583 0.666687V1.94266C13.9381 2.1685 15.479 3.83969 15.4998 5.87502H0.500213C0.520985 3.8397 2.06187 2.1685 4.04167 1.94266V0.666687C4.04167 0.321509 4.32149 0.0416871 4.66667 0.041687C5.01184 0.041687 5.29167 0.321509 5.29167 0.666687V1.91669H10.7083V0.666687C10.7083 0.321509 10.9882 0.041687 11.3333 0.041687ZM0.5 7.12502H15.5V13.3334C15.5 15.5425 13.7091 17.3334 11.5 17.3334H4.5C2.29086 17.3334 0.5 15.5425 0.5 13.3334V7.12502ZM8 12.3334C8.46024 12.3334 8.83333 11.9603 8.83333 11.5C8.83333 11.0398 8.46024 10.6667 8 10.6667C7.53976 10.6667 7.16667 11.0398 7.16667 11.5C7.16667 11.9603 7.53976 12.3334 8 12.3334ZM12.1667 11.5C12.1667 11.9603 11.7936 12.3334 11.3333 12.3334C10.8731 12.3334 10.5 11.9603 10.5 11.5C10.5 11.0398 10.8731 10.6667 11.3333 10.6667C11.7936 10.6667 12.1667 11.0398 12.1667 11.5ZM4.66667 12.3334C5.1269 12.3334 5.5 11.9603 5.5 11.5C5.5 11.0398 5.1269 10.6667 4.66667 10.6667C4.20643 10.6667 3.83333 11.0398 3.83333 11.5C3.83333 11.9603 4.20643 12.3334 4.66667 12.3334Z"
+                      fill="#50B533"
+                    />
+                  </svg>
+                  <p className="text-[var(--secondary-8,#233244)] text-center font-inter text-[18px] font-bold leading-[28px]">
+                    6 Days
+                  </p>
+                </div>
+                <p className="w-[98px] text-[var(--secondary-5,#56677D)] font-inter text-[14px] font-medium leading-[20px]">
+                  Average to Let
+                </p>
+              </div>
+            </div>
+            {/* second box */}
+            <div className="inline-flex p-[20px_54px_20px_20px] items-center rounded-[12px] bg-[var(--secondary-1,#EEF1F3)]">
+              <div className="flex flex-col items-start gap-[4px]">
+                <div className="flex items-center gap-[6px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M13.4849 18.3334H6.51768C4.59372 18.3334 3.03405 16.845 3.03405 15.009V10.9442C3.03405 10.354 2.78836 9.78801 2.35104 9.37068C1.33781 8.40377 1.46953 6.80173 2.62839 5.99745L7.95233 2.30252C9.17387 1.45474 10.8287 1.45474 12.0503 2.30252L17.3742 5.99745C18.5331 6.80173 18.6648 8.40377 17.6516 9.37068C17.2142 9.78801 16.9686 10.354 16.9686 10.9442V15.009C16.9686 16.845 15.4089 18.3334 13.4849 18.3334ZM8.33464 14.375C7.98946 14.375 7.70964 14.6548 7.70964 15C7.70964 15.3452 7.98946 15.625 8.33464 15.625H11.668C12.0131 15.625 12.293 15.3452 12.293 15C12.293 14.6548 12.0131 14.375 11.668 14.375H8.33464Z"
+                      fill="#50B533"
+                    />
+                  </svg>
+                  <p className="text-[var(--secondary-8,#233244)] text-center font-inter text-[18px] font-bold leading-[28px]">
+                    1,269,346
+                  </p>
+                </div>
+                <p className="text-[var(--secondary-5,#56677D)] font-inter text-[14px] font-medium leading-[20px]">
+                  Properties Let On Verve
+                </p>
+              </div>
+            </div>
+            {/* third */}
+            <div className="inline-flex p-[20px_10px_20px_20px] items-center rounded-[12px] bg-[var(--secondary-1,#EEF1F3)]">
+              <div className="flex flex-col items-start gap-[4px]">
+                <div className="flex items-center gap-[6px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="18"
+                    viewBox="0 0 16 18"
+                    fill="none"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M11.3333 0.041687C11.6785 0.041687 11.9583 0.321509 11.9583 0.666687V1.94266C13.9381 2.1685 15.479 3.83969 15.4998 5.87502H0.500213C0.520985 3.8397 2.06187 2.1685 4.04167 1.94266V0.666687C4.04167 0.321509 4.32149 0.0416871 4.66667 0.041687C5.01184 0.041687 5.29167 0.321509 5.29167 0.666687V1.91669H10.7083V0.666687C10.7083 0.321509 10.9882 0.041687 11.3333 0.041687ZM0.5 7.12502H15.5V13.3334C15.5 15.5425 13.7091 17.3334 11.5 17.3334H4.5C2.29086 17.3334 0.5 15.5425 0.5 13.3334V7.12502ZM8 12.3334C8.46024 12.3334 8.83333 11.9603 8.83333 11.5C8.83333 11.0398 8.46024 10.6667 8 10.6667C7.53976 10.6667 7.16667 11.0398 7.16667 11.5C7.16667 11.9603 7.53976 12.3334 8 12.3334ZM12.1667 11.5C12.1667 11.9603 11.7936 12.3334 11.3333 12.3334C10.8731 12.3334 10.5 11.9603 10.5 11.5C10.5 11.0398 10.8731 10.6667 11.3333 10.6667C11.7936 10.6667 12.1667 11.0398 12.1667 11.5ZM4.66667 12.3334C5.1269 12.3334 5.5 11.9603 5.5 11.5C5.5 11.0398 5.1269 10.6667 4.66667 10.6667C4.20643 10.6667 3.83333 11.0398 3.83333 11.5C3.83333 11.9603 4.20643 12.3334 4.66667 12.3334Z"
+                      fill="#50B533"
+                    />
+                  </svg>
+                  <p className="text-[var(--secondary-8,#233244)] text-center font-inter text-[18px] font-bold leading-[28px]">
+                    7,078,438
+                  </p>
+                </div>
+                <p className="text-[var(--secondary-5,#56677D)] font-inter text-[14px] font-medium leading-[20px]">
+                  Registered Landlords & Te..
+                </p>
+              </div>
+            </div>
+            {/* fourth */}
+            <div className="inline-flex p-[20px] items-center rounded-[12px] bg-[var(--secondary-1,#EEF1F3)]">
+              <div className="flex flex-col items-start gap-[4px]">
+                <div className="flex items-center gap-[6px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="18"
+                    viewBox="0 0 16 18"
+                    fill="none"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M11.3333 0.041687C11.6785 0.041687 11.9583 0.321509 11.9583 0.666687V1.94266C13.9381 2.1685 15.479 3.83969 15.4998 5.87502H0.500213C0.520985 3.8397 2.06187 2.1685 4.04167 1.94266V0.666687C4.04167 0.321509 4.32149 0.0416871 4.66667 0.041687C5.01184 0.041687 5.29167 0.321509 5.29167 0.666687V1.91669H10.7083V0.666687C10.7083 0.321509 10.9882 0.041687 11.3333 0.041687ZM0.5 7.12502H15.5V13.3334C15.5 15.5425 13.7091 17.3334 11.5 17.3334H4.5C2.29086 17.3334 0.5 15.5425 0.5 13.3334V7.12502ZM8 12.3334C8.46024 12.3334 8.83333 11.9603 8.83333 11.5C8.83333 11.0398 8.46024 10.6667 8 10.6667C7.53976 10.6667 7.16667 11.0398 7.16667 11.5C7.16667 11.9603 7.53976 12.3334 8 12.3334ZM12.1667 11.5C12.1667 11.9603 11.7936 12.3334 11.3333 12.3334C10.8731 12.3334 10.5 11.9603 10.5 11.5C10.5 11.0398 10.8731 10.6667 11.3333 10.6667C11.7936 10.6667 12.1667 11.0398 12.1667 11.5ZM4.66667 12.3334C5.1269 12.3334 5.5 11.9603 5.5 11.5C5.5 11.0398 5.1269 10.6667 4.66667 10.6667C4.20643 10.6667 3.83333 11.0398 3.83333 11.5C3.83333 11.9603 4.20643 12.3334 4.66667 12.3334Z"
+                      fill="#50B533"
+                    />
+                  </svg>
+                  <p className="text-[var(--secondary-8,#233244)] text-center font-inter text-[18px] font-bold leading-[28px]">
+                    No Admin Fee
+                  </p>
+                </div>
+                <p className="w-[98px] text-[var(--secondary-5,#56677D)] font-inter text-[14px] font-medium leading-[20px]">
+                  Since 2012
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
