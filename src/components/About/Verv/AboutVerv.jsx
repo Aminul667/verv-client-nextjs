@@ -2,7 +2,10 @@ import AreLandlord from "@/components/Home/AreLandlord";
 import Reviews from "@/components/Shared/Reviews";
 import VervAccordion from "./VervAccordion";
 import vervAbout from "../../../assets/images/verv-about.jpg";
+import vervHouse from "../../../assets/images/verv-house.png";
+import vervDoll from "../../../assets/images/verv-doll.png";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const AboutVerv = () => {
   return (
@@ -31,8 +34,8 @@ const AboutVerv = () => {
       </section>
 
       {/* tailored for property */}
-      <section className="w-[1216px] h-[811px] m-auto flex justify-between items-start gap-[33px] bg-lime-400">
-        <div className="w-[489px] flex flex-col items-start gap-[50px] self-stretch bg-red-400">
+      <section className="w-[1216px] h-[811px] m-auto flex justify-between items-start gap-[33px] mb-[100px]">
+        <div className="w-[489px] flex flex-col items-start gap-[50px] self-stretch">
           <div className="flex flex-col items-start gap-6 self-stretch">
             <h2 className="text-colorTextPrimary text-4xl font-bold leading-[44px]">
               Tailored for Property Owners and Renters
@@ -153,6 +156,78 @@ const AboutVerv = () => {
                   Since 2012
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[694px] flex flex-col items-start gap-[16px]">
+          {/* first part */}
+          <div className="relative h-[399px] self-stretch rounded-[16px] border border-[#CED3D9] bg-[#FCFCFC]">
+            <p className="text-[#398124] text-[24px] font-semibold leading-[32px] pl-[28px] pt-[28px] mb-[16px]">
+              Landlords
+            </p>
+            <div className="absolute top-[28px] right-[28px]">
+              <Image
+                src={vervHouse}
+                alt="house Image"
+                height={112}
+                width={139}
+              />
+            </div>
+            <div className="flex flex-col w-[596px] h-[224px] shrink-0 pl-[28px] gap-[16px]">
+              <p className="w-[476px] text-colorTextPrimary leading-[24px]">
+                You want renting out your property or room to be cheap, painless
+                and risk-free. So did we, and in 2012 we fixed it. We now let
+                more properties than anyone else in the UK.
+              </p>
+              <p className="w-[596px] text-colorTextPrimary leading-[24px]">
+                Our prices are totally transparent. Starting from a totally free
+                service, ranging up to a £69 service for our full tenant-find
+                package which includes advertising on Rightmove, Zoopla and
+                other major property portals.
+              </p>
+              <p className="w-[596px] text-colorTextPrimary leading-[24px]">
+                We&apos;ll guide you through every step, from creating your
+                advert to finding the perfect tenant and handling everything
+                needed to set up the tenancy.
+              </p>
+            </div>
+
+            <div className="pl-[28px] pt-[16px]">
+              <Button className="text-[16px] font-medium leading-[24px] flex w-[168px] h-[44px] p-[6px_16px] justify-center items-center gap-[8px] shrink-0 rounded-[32px] bg-[#50B533]">
+                Find Out More
+              </Button>
+            </div>
+          </div>
+          {/* second part */}
+          <div className="relative h-[396px] self-stretch rounded-[16px] border border-[#CED3D9] bg-[#FCFCFC]">
+            <p className="text-[#398124] text-[24px] font-semibold leading-[32px] pl-[28px] pt-[28px] mb-[16px]">
+              Tenants
+            </p>
+            <div className="absolute top-[28px] right-[28px]">
+              <Image src={vervDoll} alt="verv doll" height={128} width={139} />
+            </div>
+            <div className="flex flex-col w-[596px] h-[224px] shrink-0 pl-[28px] gap-[16px] mb-[24px]">
+              <p className="w-[476px] text-colorTextPrimary leading-[24px]">
+                At Verv, we believe everyone should be able to find their dream
+                home while feeling safe and in control.
+              </p>
+              <p className="w-[596px] text-colorTextPrimary leading-[24px]">
+                We were the pioneers in banning tenant fees, and we continue to
+                offer the best experience for tenants. Say goodbye to fake
+                listings, pushy agents, and unnecessary trips to the office.
+              </p>
+              <p className="w-[596px] text-colorTextPrimary leading-[24px]">
+                We make it simple to find the perfect landlord with filters for
+                DSS, pets, students, and other groups often overlooked by the
+                market. No matter what you&apos;re looking for, finding a new
+                home has never been easier.
+              </p>
+            </div>
+
+            <div className="pl-[28px]">
+              <Button className="text-[16px] font-medium leading-[24px] flex w-[168px] h-[44px] p-[6px_16px] justify-center items-center gap-[8px] shrink-0 rounded-[32px] bg-[#50B533]">
+                Find Out More
+              </Button>
             </div>
           </div>
         </div>

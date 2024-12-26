@@ -9,7 +9,12 @@ import React from "react";
 const VervAccordion = () => {
   return (
     <div className="px-[20px]">
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion
+        type="single"
+        defaultValue="item-1"
+        collapsible
+        className="w-full"
+      >
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-colorTextPrimary text-2xl font-semibold leading-[32px]">
             What is Verve all about?
@@ -17,22 +22,22 @@ const VervAccordion = () => {
           <AccordionContent>
             <div className="text-colorTextSecondary flex flex-col gap-4">
               <p className="leading-[24px]">
-                From founding in 2012, to becoming the UK&apos;s biggest letting
-                agent in 2015, Verve has always had one mission: to make renting
-                fairer, safer and cheaper for everyone.
+                Founded in 2018, Verve quickly became the UK’s largest letting
+                agent with one clear mission: to make renting fairer, safer, and
+                more affordable for everyone.
               </p>
               <p className="leading-[24px]">
-                We support you all the way from finding the right tenant through
-                to creating the tenancy, and even collecting the rent. This
-                includes gas and electricity certification, inventories,
-                photography, insurance and more - as and when you need it.
+                We guide you every step of the way—from finding the right tenant
+                to setting up the tenancy and even collecting the rent. We offer
+                services like gas and electricity certifications, inventories,
+                photography, insurance, and more, all tailored to your needs.
               </p>
               <p className="leading-[24px]">
-                Over 7,084,000 people have used Verve to find and let property.
-                Helping to create over 1,271,148 tenancies for our landlords and
-                tenants along the way. We&apos;re a member of the Property
-                Ombudsman for Lettings, and multiple other associations so you
-                know you&apos;re in safe hands.
+                Over 7,084,000 people have used Verv to find and let property,
+                helping to create over 1,271,148 tenancies. As a member of the
+                Property Ombudsman for Lettings and several other trusted
+                associations, you can be confident that you&apos;re in safe
+                hands.
               </p>
             </div>
           </AccordionContent>
