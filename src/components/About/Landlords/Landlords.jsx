@@ -17,12 +17,12 @@ const Landlords = () => {
           {/* property */}
           <div className="w-[592px] h-[380px] flex-shrink-0 rounded-lg bg-[rgba(213,237,206,0.6)] pl-10 pt-10 pr-[37px] pb-[36px]">
             <h2 className="self-stretch text-colorTextPrimary text-5xl font-bold leading-[60px]">
-              Advertise Your Rental Property!
+              List Your Rental Property!
             </h2>
             <p className="self-stretch text-colorTextSecondary text-base leading-[24px] mt-6">
-              When you create your first lettings advert on Verve, we will
-              review and publish it to the property listings on Rightmove,
-              Zoopla, PrimeLocation and all major property portals.
+              Once you create your first letting advert on Verv, we will review
+              it and share it on Rightmove, Zoopla, Prime Location, and other
+              major property portals.
             </p>
             <Button className="flex w-[272px] h-[56px] px-4 py-2 justify-center items-center gap-2 rounded-[32px] bg-colorButton text-lg font-semibold mt-8">
               Create Your Advert
@@ -137,13 +137,14 @@ const Landlords = () => {
       <section className="flex flex-col justify-start w-[1216px] items-start gap-[24px] m-auto mt-[100px]">
         <div className="flex flex-col items-start gap-7 self-stretch">
           <p className="text-[#314660] font-semibold text-[30px] leading-[38px]">
-            Discover New Opportunities for Landlords!
+            Explore New Opportunities for Landlords!
           </p>
           <p className="text-[#233244] font-normal text-[16px] leading-[24px] w-[833px]">
-            Verve does a lot more than property ads and listings. We offer a
-            full tenancy creation service called Rent Now, and everything else
-            you need to rent your house, including: gas & electricity safety
-            certification, inventories, photography, insurance and much more!
+            Verv offers more than just property ads and listings. We provide a
+            comprehensive tenancy creation service called Rent Now, along with
+            everything you need to rent your property, including gas &
+            electricity safety certificates, inventories, photography,
+            insurance, and much more!
           </p>
         </div>
         <Button className="flex w-[262px] h-[52px] p-1.5 justify-center items-center gap-2 rounded-[32px] bg-colorButton">
