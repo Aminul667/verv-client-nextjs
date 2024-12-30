@@ -33,15 +33,25 @@ export const loginUser = async (userData) => {
     const { data } = await axiosInstance.post("/auth/login", userData);
 
     if (data.success) {
-      cookies().set("accessToken", data?.data?.accessToken);
-      cookies().set("refreshToken", data?.data?.refreshToken);
+      const cookieStore = await cookies();
+      cookieStore.set("accessToken", data?.data?.accessToken);
+      cookieStore.set("refreshToken", data?.data?.refreshToken);
     }
 
     return data;
   } catch (error) {
+    console.log(
+      "Error in registerUser:",
+      error?.response?.data || error.message
+    );
     throw new Error(error);
   }
 };
+
+// export const logout = () => {
+//   cookies().delete("accessToken");
+//   cookies().delete("refreshToken");
+// };
 
 // export const logout = () => {
 //   cookies().delete("accessToken");
