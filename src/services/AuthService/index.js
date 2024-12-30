@@ -53,10 +53,11 @@ export const loginUser = async (userData) => {
 //   cookies().delete("refreshToken");
 // };
 
-// export const logout = () => {
-//   cookies().delete("accessToken");
-//   cookies().delete("refreshToken");
-// };
+export const logout = async () => {
+  const cookieStore = await cookies();
+  cookieStore.delete("accessToken");
+  cookieStore.delete("refreshToken");
+};
 
 export const getCurrentUser = async () => {
   const cookieStore = await cookies();
@@ -66,8 +67,9 @@ export const getCurrentUser = async () => {
 
   if (accessToken) {
     decodedToken = await jwtDecode(accessToken);
+
     return {
-      userEmail: decodedToken.email,
+      userEmail: decodedToken.userEmail,
       role: decodedToken.role,
     };
   }
