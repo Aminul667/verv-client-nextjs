@@ -12,8 +12,13 @@ import Loading from "@/utils/Loading";
 import { useUser } from "@/context/user.provider";
 import { useEffect } from "react";
 import { registerOptions } from "@/constants";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const RegisterUser = () => {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const redirect = searchParams.get("redirect");
+
   const {
     register,
     handleSubmit,
@@ -36,20 +41,18 @@ const RegisterUser = () => {
     console.log("Form Data: ", userData);
 
     handleUserRegistration(userData);
-
-    // for loading state
     userLoading(true);
   };
 
-  // useEffect(() => {
-  //   if (!isPending && isSuccess) {
-  //     if (redirect) {
-  //       router.push(redirect);
-  //     } else {
-  //       router.push("/");
-  //     }
-  //   }
-  // }, [isPending, isSuccess]);
+  useEffect(() => {
+    if (!isPending && isSuccess) {
+      if (redirect) {
+        router.push(redirect);
+      } else {
+        router.push("/");
+      }
+    }
+  }, [isPending, isSuccess]);
 
   return (
     <>
