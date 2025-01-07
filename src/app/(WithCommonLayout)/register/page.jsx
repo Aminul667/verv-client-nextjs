@@ -1,4 +1,5 @@
 import RegisterUser from "@/components/Register/RegisterUser";
+import Loading from "@/utils/Loading";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -9,7 +10,7 @@ const RegisterPage = () => {
         Create a new account
       </h2>
 
-      <Suspense>
+      <Suspense fallback={<Loading />}>
         <RegisterUser />
       </Suspense>
       <p className="text-center text-[#3B5374]">
