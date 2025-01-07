@@ -1,9 +1,15 @@
+"use client";
+
 import RegisterUser from "@/components/Register/RegisterUser";
 import Loading from "@/utils/Loading";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 const RegisterPage = () => {
+  const searchParams = useSearchParams();
+  const redirect = searchParams.get("redirect");
+
   return (
     <div className="m-auto flex flex-col items-center justify-center w-[416px] h-[411px] p-10 mt-14 gap-10 shrink-0 rounded-2xl border border-[#EEF1F3] bg-white shadow-[0px_4px_20px_rgba(0,0,0,0.08)]">
       <h2 className="text-[#00204A] text-center font-inter text-[24px] font-semibold leading-[120%]">
@@ -11,7 +17,7 @@ const RegisterPage = () => {
       </h2>
 
       <Suspense fallback={<Loading />}>
-        <RegisterUser />
+        <RegisterUser redirect={redirect} />
       </Suspense>
       <p className="text-center text-[#3B5374]">
         Got an account?{" "}
