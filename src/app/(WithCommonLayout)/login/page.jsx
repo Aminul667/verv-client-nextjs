@@ -1,6 +1,8 @@
 import Login from "@/components/Login/Login";
 import SocialButton from "@/components/Login/SocialButton";
+import Loading from "@/utils/Loading";
 import Link from "next/link";
+import { Suspense } from "react";
 
 const LoginPage = () => {
   return (
@@ -15,7 +17,10 @@ const LoginPage = () => {
         </p>
         <div className="w-[336px] h-[1px] bg-[#EEF1F3]"></div>
       </div>
-      <Login />
+      <Suspense fallback={<Loading />}>
+        <Login />
+      </Suspense>
+
       <p className="text-center text-[#3B5374]">
         Don’t have account?{" "}
         <span className="font-semibold underline decoration-solid text-colorButton">
