@@ -12,12 +12,12 @@ import Loading from "@/utils/Loading";
 import { useUser } from "@/context/user.provider";
 import { useEffect } from "react";
 import { registerOptions } from "@/constants";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
-const RegisterUser = ({ redirect }) => {
-  // const searchParams = useSearchParams();
-  // const redirect = searchParams.get("redirect");
+const RegisterUser = () => {
+  const searchParams = useSearchParams();
   const router = useRouter();
+  const redirect = searchParams.get("redirect");
 
   const {
     register,
