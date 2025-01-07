@@ -1,5 +1,6 @@
 import RegisterUser from "@/components/Register/RegisterUser";
 import Link from "next/link";
+import { Suspense } from "react";
 
 const RegisterPage = () => {
   return (
@@ -8,7 +9,9 @@ const RegisterPage = () => {
         Create a new account
       </h2>
 
-      <RegisterUser />
+      <Suspense>
+        <RegisterUser />
+      </Suspense>
       <p className="text-center text-[#3B5374]">
         Got an account?{" "}
         <span className="font-semibold underline decoration-solid text-colorButton">
